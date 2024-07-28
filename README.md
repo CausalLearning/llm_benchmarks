@@ -1,6 +1,14 @@
 # llm_benchmarks
 
-A collection of benchmarks and datasets used to evaluate the generalization, interpretability, and credibility of the LLM.
+A collection of benchmarks and datasets used to evaluate the generalization, interpretability, and credibility of the LLM. (....)
+
+
+
+# Table of Contents
+
+- [Generalization](#Generalization)
+- [Interpretability](#Interpretability)
+- [Credibility](#Credibility)
 
 # Generalization
 
@@ -53,6 +61,22 @@ In MuEP, instructions for all tasks are provided in both Template and Free-form 
 > >
 > > ​    - After cooling the bread, set it on the counter next to the stove.
 
+
+
+
+
+
+
+
+
+
+
+
+
 # Interpretability
+
+
+
+
 
 # Credibility
