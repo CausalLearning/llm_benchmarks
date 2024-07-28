@@ -63,13 +63,21 @@ In MuEP, instructions for all tasks are provided in both Template and Free-form 
 
 
 
+3. ##### Parameter-Efficient Fine-Tuning (PEFT) evaluation result
 
+   ###### 3.1 Template Instruction
 
+|                                                              | Seen  | Seen  |       |        | Seen  | Unseen |       |       |        |       |
+| ------------------------------------------------------------ | ----- | ----- | ----- | ------ | ----- | ------ | ----- | ----- | ------ | ----- |
+|                                                              | SR    | IS    | GCS   | LC     | RDI   | SR     | IS    | GCS   | LC     | RDI   |
+| [Baichuan2-7B](https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat) | 86.43 | 11.60 | 89.43 | 98.22  | 5.26  | 89.55  | 13.78 | 92.55 | 95.43  | 7.14  |
+| [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b)      | 86.43 | 11.84 | 86.43 | 100.00 | 31.58 | 81.34  | 12.88 | 81.34 | 99.52  | 44.00 |
+| [Qwen2-7B](https://huggingface.co/Qwen/Qwen2-7B-Instruct)    | 83.57 | 12.26 | 83.57 | 95.36  | 0.00  |        |       |       |        |       |
+| [LLaMA3-8B](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) |       |       |       |        |       |        |       |       |        |       |
+| [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) |       |       |       |        |       |        |       |       |        |       |
+| [Gemma-1.1-7b](https://huggingface.co/google/gemma-1.1-7b-it) | 79.29 | 11.61 | 79.29 | 98.05  | 0.00  | 83.58  | 13.10 | 83.58 | 100.00 | 0.00  |
 
-
-
-
-
+######    3.2 Freedom-form Instruction
 
 
 
