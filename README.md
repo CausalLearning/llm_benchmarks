@@ -4,7 +4,11 @@ A collection of benchmarks and datasets used to evaluate the generalization, int
 
 # Generalization
 
-We use MuEP(https://github.com/kanxueli/MuEP) to evaluate the generalization of large language models. MuEP inherits the original testing framework from ALFWorld(https://github.com/alfworld/alfworld) but incorporates a larger training dataset and fine-grained evaluation metrics. MuEP's testing set primarily assesses model generalization through two methods:
+We use 
+
+[MuEP]: https://github.com/kanxueli/MuEP
+
+to evaluate the generalization of large language models. MuEP inherits the original testing framework from ALFWorld(https://github.com/alfworld/alfworld) but incorporates a larger training dataset and fine-grained evaluation metrics. MuEP's testing set primarily assesses model generalization through two methods:
 
 ##### 1. **Seen and Unseen Testing Scenarios**
 
