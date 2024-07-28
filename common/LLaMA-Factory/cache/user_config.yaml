@@ -1,0 +1,6 @@
+cache_dir: null
+lang: en
+last_model: Baichuan2-7B-Chat
+path_dict:
+  Gemma-1.1-7B-Chat: /home/data2/LLM_benchmarking/gemma-1.1-7b-it
+  LLaMA3-8B-Chat: /home/data2/LLM_benchmarking/Meta-LLama3-8B-Instruct
