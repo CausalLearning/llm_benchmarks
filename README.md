@@ -11,8 +11,6 @@ A collection of benchmarks and datasets used to evaluate the generalization, int
 - [可信度](#Credibility)
 
 # 泛化性（Generalization）
-
-We use [MuEP](https://github.com/kanxueli/MuEP) to evaluate the generalization of large language models. MuEP inherits the original testing framework from [ALFWorld](https://github.com/alfworld/alfworld) but incorporates a larger training dataset and fine-grained evaluation metrics. MuEP's testing set primarily assesses model generalization through two methods:
 我们使用[MuEP](https://github.com/kanxueli/MuEP)来评估大型语言模型的泛化能力。MuEP 继承了[ALFWorld](https://github.com/alfworld/alfworld) 的原始测试框架，但引入了更大的训练数据集和更细致的评估指标。MuEP的测试集主要通过以下两种方法评估模型的泛化能力：
 
 ##### 1. **见过和未见过的测试场景**
