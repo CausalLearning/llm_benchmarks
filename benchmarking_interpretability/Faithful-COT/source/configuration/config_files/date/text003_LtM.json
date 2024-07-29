@@ -1,0 +1,6 @@
+{
+  "LM": "text-davinci-003",
+  "prompt_name": "LtM",
+  "n_votes": 1,
+  "no_solver": true
+}

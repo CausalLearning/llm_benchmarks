@@ -1,0 +1,7 @@
+{
+  "LM": "code-davinci-002",
+  "prompt_name": "noNL",
+  "n_votes": 40,
+  "temperature": 0.4,
+  "batch_size": 10
+}

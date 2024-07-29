@@ -83,7 +83,40 @@ In MuEP, instructions for all tasks are provided in both Template and Free-form 
 
 # Interpretability
 
+我们使用[Faithful-COT](https://github.com/veronica320/Faithful-COT)来评估大模型的可解释性。思维链（chain-of-thought，COT）作为一种解释大模型内部推理过程的方法，在一定程度上反映了模型的忠实性，即模型内部的行为。Faithful-COT使用了两阶段过程达成模型的忠实推理：
+> - **解释推理过程:** 在第一阶段中，不同的模型根据问题与提示模板，生成一系列子问题展示求解过程，也即是大模型思维链。
+> - **求解最终结果:** 在第二阶段中，求解器根据第一阶段生成的子问题求解最终答案，获得忠实的推理结果
 
+在这个过程中，我们使用最终的结果的精确率衡量模型的可解释性，若模型的可解释性好，则其生成的思维链越准确，之后求解器所获得的推理结果精确率越高；若模型的可解释性差，则其生成的推理过程并不符合客观真实的推理过程，导致最终结果的精确率较差。
+
+##### 1. **推理数据集**
+我们按照Faithful-COT原论文，使用了10个评估数据集，其中包括五个数学单词问题（Meth Word Problems，MWP），三个多跳问答数据集（Multi-hop QA），一个规划数据集（Planning）和一个关系推理（Relation inference）数据集。
+
+>MWP: GSM8K (Cobbe et al., 2021), SVAMP (Patel et al., 2021), MultiArith (Roy and Roth, 2015), ASDiv (Miao et al., 2020), and AQuA (Ling et al., 2017)
+>>示例："question": "Dan had \$ 3 left with him after he bought a candy bar. If he had $ 4 at the start, how much did the candy bar cost?", "answer": "#### 1"
+>
+>Multi-hop QA: StrategyQA (Geva et al., 2021), Date Understanding from BIG-bench (BIG-Bench collaboration, 2021), Sports Understanding from BIG-bench
+>>示例："Do all parts of the aloe vera plant taste good?","answer":false
+>
+>Planning: SayCan dataset (Ahn et al.,2022)
+>>示例："question": "Visit the table and the counter.", "answer": "[\"1. find(table)\\n2. find(counter)\\n3. done().\\n\"]"
+>
+>Relation inference: CLUTRR (Sinha et al.,2019) 
+>>示例："question": "[Michael] and his wife [Alma] baked a cake for [Jennifer], his daughter.\nQuestion: How is [Jennifer] related to [Alma]?", "answer": "husband-daughter #### daughter", "k": 2
+
+##### 2. **不同模型的评估结果**
+
+
+##### 3. **原始论文**
+
+```
+@article{lyu2023faithful,
+  title={Faithful chain-of-thought reasoning},
+  author={Lyu, Qing and Havaldar, Shreya and Stein, Adam and Zhang, Li and Rao, Delip and Wong, Eric and Apidianaki, Marianna and Callison-Burch, Chris},
+  journal={arXiv preprint arXiv:2301.13379},
+  year={2023}
+}
+```
 
 
 

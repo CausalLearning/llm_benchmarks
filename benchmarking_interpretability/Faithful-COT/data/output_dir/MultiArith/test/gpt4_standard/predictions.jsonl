@@ -1,0 +1,596 @@
+{"id": 0, "answer": "39", "completion": "The answer is 39.", "completions": ["The answer is 39."]}
+{"id": 1, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 2, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 3, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 4, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 5, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 6, "answer": "19", "completion": "The answer is 19.", "completions": ["The answer is 19."]}
+{"id": 7, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 8, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 9, "answer": "1", "completion": "The answer is 1.", "completions": ["The answer is 1."]}
+{"id": 10, "answer": "66", "completion": "The answer is 66.", "completions": ["The answer is 66."]}
+{"id": 11, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 12, "answer": "22", "completion": "The answer is 22.", "completions": ["The answer is 22."]}
+{"id": 13, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 14, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 15, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 16, "answer": "14", "completion": "The answer is 14.", "completions": ["The answer is 14."]}
+{"id": 17, "answer": "86", "completion": "The answer is 86.", "completions": ["The answer is 86."]}
+{"id": 18, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 19, "answer": "25", "completion": "The answer is 25.", "completions": ["The answer is 25."]}
+{"id": 20, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 21, "answer": "68", "completion": "The answer is 68.", "completions": ["The answer is 68."]}
+{"id": 22, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 23, "answer": "19", "completion": "The answer is 19.", "completions": ["The answer is 19."]}
+{"id": 24, "answer": "55", "completion": "The answer is 55.", "completions": ["The answer is 55."]}
+{"id": 25, "answer": "34", "completion": "The answer is 34.", "completions": ["The answer is 34."]}
+{"id": 26, "answer": "12", "completion": "The answer is 12.", "completions": ["The answer is 12."]}
+{"id": 27, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 28, "answer": "73", "completion": "The answer is 73.", "completions": ["The answer is 73."]}
+{"id": 29, "answer": "17", "completion": "The answer is 17.", "completions": ["The answer is 17."]}
+{"id": 30, "answer": "18", "completion": "The answer is 18.", "completions": ["The answer is 18."]}
+{"id": 31, "answer": "41", "completion": "The answer is 41.", "completions": ["The answer is 41."]}
+{"id": 32, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 33, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 34, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 35, "answer": "13", "completion": "The answer is 13.", "completions": ["The answer is 13."]}
+{"id": 36, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 37, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 38, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 39, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 40, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 41, "answer": "14", "completion": "The answer is 14.", "completions": ["The answer is 14."]}
+{"id": 42, "answer": "1", "completion": "The answer is 1.", "completions": ["The answer is 1."]}
+{"id": 43, "answer": "1", "completion": "The answer is 1.", "completions": ["The answer is 1."]}
+{"id": 44, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 46, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 47, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 48, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 49, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 50, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 51, "answer": "14", "completion": "The answer is 14.", "completions": ["The answer is 14."]}
+{"id": 52, "answer": "1", "completion": "The answer is 1.", "completions": ["The answer is 1."]}
+{"id": 53, "answer": "1", "completion": "The answer is 1.", "completions": ["The answer is 1."]}
+{"id": 54, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 56, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 57, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 58, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 59, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 60, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 61, "answer": "33", "completion": "The answer is 33.", "completions": ["The answer is 33."]}
+{"id": 62, "answer": "23", "completion": "The answer is 23.", "completions": ["The answer is 23."]}
+{"id": 63, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 64, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 65, "answer": "28", "completion": "The answer is 28.", "completions": ["The answer is 28."]}
+{"id": 66, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 67, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 68, "answer": "47", "completion": "The answer is 47.", "completions": ["The answer is 47."]}
+{"id": 69, "answer": "51", "completion": "The answer is 51.", "completions": ["The answer is 51."]}
+{"id": 70, "answer": "53", "completion": "The answer is 53.", "completions": ["The answer is 53."]}
+{"id": 71, "answer": "20", "completion": "The answer is 20.", "completions": ["The answer is 20."]}
+{"id": 72, "answer": "31", "completion": "The answer is 31.", "completions": ["The answer is 31."]}
+{"id": 73, "answer": "22", "completion": "The answer is 22.", "completions": ["The answer is 22."]}
+{"id": 74, "answer": "39", "completion": "The answer is 39.", "completions": ["The answer is 39."]}
+{"id": 75, "answer": "14", "completion": "The answer is 14.", "completions": ["The answer is 14."]}
+{"id": 76, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 77, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 78, "answer": "34", "completion": "The answer is 34.", "completions": ["The answer is 34."]}
+{"id": 79, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 80, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 81, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 82, "answer": "19", "completion": "The answer is 19.", "completions": ["The answer is 19."]}
+{"id": 83, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 84, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 85, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 86, "answer": "21", "completion": "The answer is 21.", "completions": ["The answer is 21."]}
+{"id": 87, "answer": "58", "completion": "The answer is 58.", "completions": ["The answer is 58."]}
+{"id": 88, "answer": "19", "completion": "The answer is 19.", "completions": ["The answer is 19."]}
+{"id": 89, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 90, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 91, "answer": "26", "completion": "The answer is 26.", "completions": ["The answer is 26."]}
+{"id": 92, "answer": "59", "completion": "The answer is 59.", "completions": ["The answer is 59."]}
+{"id": 93, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 94, "answer": "23", "completion": "The answer is 23.", "completions": ["The answer is 23."]}
+{"id": 95, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 96, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 97, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 98, "answer": "34", "completion": "The answer is 34.", "completions": ["The answer is 34."]}
+{"id": 99, "answer": "35", "completion": "The answer is 35.", "completions": ["The answer is 35."]}
+{"id": 100, "answer": "49", "completion": "The answer is 49.", "completions": ["The answer is 49."]}
+{"id": 101, "answer": "62", "completion": "The answer is 62.", "completions": ["The answer is 62."]}
+{"id": 102, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 103, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 104, "answer": "61", "completion": "The answer is 61.", "completions": ["The answer is 61."]}
+{"id": 105, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 106, "answer": "20", "completion": "The answer is 20.", "completions": ["The answer is 20."]}
+{"id": 107, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 108, "answer": "41", "completion": "The answer is 41.", "completions": ["The answer is 41."]}
+{"id": 109, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 110, "answer": "51", "completion": "The answer is 51.", "completions": ["The answer is 51."]}
+{"id": 111, "answer": "33", "completion": "The answer is 33.", "completions": ["The answer is 33."]}
+{"id": 112, "answer": "52", "completion": "The answer is 52.", "completions": ["The answer is 52."]}
+{"id": 113, "answer": "27", "completion": "The answer is 27.", "completions": ["The answer is 27."]}
+{"id": 114, "answer": "26", "completion": "The answer is 26.", "completions": ["The answer is 26."]}
+{"id": 115, "answer": "29", "completion": "The answer is 29.", "completions": ["The answer is 29."]}
+{"id": 116, "answer": "26", "completion": "The answer is 26.", "completions": ["The answer is 26."]}
+{"id": 117, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 118, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 119, "answer": "17", "completion": "The answer is 17.", "completions": ["The answer is 17."]}
+{"id": 120, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 121, "answer": "25", "completion": "The answer is 25.", "completions": ["The answer is 25."]}
+{"id": 122, "answer": "79", "completion": "The answer is 79.", "completions": ["The answer is 79."]}
+{"id": 123, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 124, "answer": "49", "completion": "The answer is 49.", "completions": ["The answer is 49."]}
+{"id": 125, "answer": "52", "completion": "The answer is 52.", "completions": ["The answer is 52."]}
+{"id": 126, "answer": "74", "completion": "The answer is 74.", "completions": ["The answer is 74."]}
+{"id": 127, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 128, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 129, "answer": "25", "completion": "The answer is 25.", "completions": ["The answer is 25."]}
+{"id": 130, "answer": "59", "completion": "The answer is 59.", "completions": ["The answer is 59."]}
+{"id": 131, "answer": "57", "completion": "The answer is 57.", "completions": ["The answer is 57."]}
+{"id": 132, "answer": "49", "completion": "The answer is 49.", "completions": ["The answer is 49."]}
+{"id": 133, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 134, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 135, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 136, "answer": "46", "completion": "The answer is 46.", "completions": ["The answer is 46."]}
+{"id": 137, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 138, "answer": "37", "completion": "The answer is 37.", "completions": ["The answer is 37."]}
+{"id": 139, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 140, "answer": "13", "completion": "The answer is 13.", "completions": ["The answer is 13."]}
+{"id": 141, "answer": "35", "completion": "The answer is 35.", "completions": ["The answer is 35."]}
+{"id": 142, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 143, "answer": "38", "completion": "The answer is 38.", "completions": ["The answer is 38."]}
+{"id": 144, "answer": "33", "completion": "The answer is 33.", "completions": ["The answer is 33."]}
+{"id": 145, "answer": "35", "completion": "The answer is 35.", "completions": ["The answer is 35."]}
+{"id": 146, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 147, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 148, "answer": "58", "completion": "The answer is 58.", "completions": ["The answer is 58."]}
+{"id": 149, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 150, "answer": "43", "completion": "The answer is 43.", "completions": ["The answer is 43."]}
+{"id": 151, "answer": "51", "completion": "The answer is 51.", "completions": ["The answer is 51."]}
+{"id": 152, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 153, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 154, "answer": "19", "completion": "The answer is 19.", "completions": ["The answer is 19."]}
+{"id": 155, "answer": "18", "completion": "The answer is 18.", "completions": ["The answer is 18."]}
+{"id": 156, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 157, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 158, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 159, "answer": "61", "completion": "The answer is 61.", "completions": ["The answer is 61."]}
+{"id": 160, "answer": "71", "completion": "The answer is 71.", "completions": ["The answer is 71."]}
+{"id": 161, "answer": "38", "completion": "The answer is 38.", "completions": ["The answer is 38."]}
+{"id": 162, "answer": "70", "completion": "The answer is 70.", "completions": ["The answer is 70."]}
+{"id": 163, "answer": "31", "completion": "The answer is 31.", "completions": ["The answer is 31."]}
+{"id": 164, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 165, "answer": "39", "completion": "The answer is 39.", "completions": ["The answer is 39."]}
+{"id": 166, "answer": "27", "completion": "The answer is 27.", "completions": ["The answer is 27."]}
+{"id": 167, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 168, "answer": "34", "completion": "The answer is 34.", "completions": ["The answer is 34."]}
+{"id": 169, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 170, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 171, "answer": "47", "completion": "The answer is 47.", "completions": ["The answer is 47."]}
+{"id": 172, "answer": "28", "completion": "The answer is 28.", "completions": ["The answer is 28."]}
+{"id": 173, "answer": "31", "completion": "The answer is 31.", "completions": ["The answer is 31."]}
+{"id": 174, "answer": "67", "completion": "The answer is 67.", "completions": ["The answer is 67."]}
+{"id": 175, "answer": "37", "completion": "The answer is 37.", "completions": ["The answer is 37."]}
+{"id": 176, "answer": "59", "completion": "The answer is 59.", "completions": ["The answer is 59."]}
+{"id": 177, "answer": "41", "completion": "The answer is 41.", "completions": ["The answer is 41."]}
+{"id": 178, "answer": "22", "completion": "The answer is 22.", "completions": ["The answer is 22."]}
+{"id": 179, "answer": "46", "completion": "The answer is 46.", "completions": ["The answer is 46."]}
+{"id": 180, "answer": "58", "completion": "The answer is 58.", "completions": ["The answer is 58."]}
+{"id": 181, "answer": "41", "completion": "The answer is 41.", "completions": ["The answer is 41."]}
+{"id": 182, "answer": "58", "completion": "The answer is 58.", "completions": ["The answer is 58."]}
+{"id": 183, "answer": "23", "completion": "The answer is 23.", "completions": ["The answer is 23."]}
+{"id": 184, "answer": "31", "completion": "The answer is 31.", "completions": ["The answer is 31."]}
+{"id": 185, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 186, "answer": "23", "completion": "The answer is 23.", "completions": ["The answer is 23."]}
+{"id": 187, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 188, "answer": "28", "completion": "The answer is 28.", "completions": ["The answer is 28."]}
+{"id": 189, "answer": "47", "completion": "The answer is 47.", "completions": ["The answer is 47."]}
+{"id": 190, "answer": "33", "completion": "The answer is 33.", "completions": ["The answer is 33."]}
+{"id": 191, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 193, "answer": "43", "completion": "The answer is 43.", "completions": ["The answer is 43."]}
+{"id": 194, "answer": "26", "completion": "The answer is 26.", "completions": ["The answer is 26."]}
+{"id": 195, "answer": "34", "completion": "The answer is 34.", "completions": ["The answer is 34."]}
+{"id": 196, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 197, "answer": "41", "completion": "The answer is 41.", "completions": ["The answer is 41."]}
+{"id": 198, "answer": "29", "completion": "The answer is 29.", "completions": ["The answer is 29."]}
+{"id": 199, "answer": "11", "completion": "The answer is 11.", "completions": ["The answer is 11."]}
+{"id": 200, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 201, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 202, "answer": "90", "completion": "The answer is 90.", "completions": ["The answer is 90."]}
+{"id": 203, "answer": "12", "completion": "The answer is 12.", "completions": ["The answer is 12."]}
+{"id": 204, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 205, "answer": "35", "completion": "The answer is 35.", "completions": ["The answer is 35."]}
+{"id": 206, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 207, "answer": "90", "completion": "The answer is 90.", "completions": ["The answer is 90."]}
+{"id": 208, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 209, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 210, "answer": "49", "completion": "The answer is 49.", "completions": ["The answer is 49."]}
+{"id": 211, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 212, "answer": "80", "completion": "The answer is 80.", "completions": ["The answer is 80."]}
+{"id": 213, "answer": "21 dollars", "completion": "The answer is 21 dollars.", "completions": ["The answer is 21 dollars."]}
+{"id": 214, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 215, "answer": "50", "completion": "The answer is 50.", "completions": ["The answer is 50."]}
+{"id": 216, "answer": "32 dollars", "completion": "The answer is 32 dollars.", "completions": ["The answer is 32 dollars."]}
+{"id": 217, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 218, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 219, "answer": "90", "completion": "The answer is 90.", "completions": ["The answer is 90."]}
+{"id": 220, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 221, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 222, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 223, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 224, "answer": "$30", "completion": "The answer is $30.", "completions": ["The answer is $30."]}
+{"id": 225, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 226, "answer": "42", "completion": "The answer is 42.", "completions": ["The answer is 42."]}
+{"id": 227, "answer": "45 dollars", "completion": "The answer is 45 dollars.", "completions": ["The answer is 45 dollars."]}
+{"id": 228, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 229, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 230, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 231, "answer": "70", "completion": "The answer is 70.", "completions": ["The answer is 70."]}
+{"id": 232, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 233, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 234, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 235, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 236, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 237, "answer": "70", "completion": "The answer is 70.", "completions": ["The answer is 70."]}
+{"id": 238, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 239, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 240, "answer": "21", "completion": "The answer is 21.", "completions": ["The answer is 21."]}
+{"id": 241, "answer": "48 dollars", "completion": "The answer is 48 dollars.", "completions": ["The answer is 48 dollars."]}
+{"id": 242, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 243, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 244, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 245, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 246, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 247, "answer": "18", "completion": "The answer is 18.", "completions": ["The answer is 18."]}
+{"id": 248, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 249, "answer": "$27", "completion": "The answer is $27.", "completions": ["The answer is $27."]}
+{"id": 250, "answer": "80", "completion": "The answer is 80.", "completions": ["The answer is 80."]}
+{"id": 251, "answer": "12", "completion": "The answer is 12.", "completions": ["The answer is 12."]}
+{"id": 252, "answer": "28", "completion": "The answer is 28.", "completions": ["The answer is 28."]}
+{"id": 253, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 254, "answer": "$60", "completion": "The answer is $60.", "completions": ["The answer is $60."]}
+{"id": 255, "answer": "56", "completion": "The answer is 56.", "completions": ["The answer is 56."]}
+{"id": 256, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 257, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 258, "answer": "90", "completion": "The answer is 90.", "completions": ["The answer is 90."]}
+{"id": 259, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 260, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 261, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 262, "answer": "42", "completion": "The answer is 42.", "completions": ["The answer is 42."]}
+{"id": 263, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 264, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 265, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 266, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 267, "answer": "70", "completion": "The answer is 70.", "completions": ["The answer is 70."]}
+{"id": 268, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 269, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 270, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 271, "answer": "80 dollars", "completion": "The answer is 80 dollars.", "completions": ["The answer is 80 dollars."]}
+{"id": 272, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 273, "answer": "80", "completion": "The answer is 80.", "completions": ["The answer is 80."]}
+{"id": 274, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 275, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 276, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 277, "answer": "20", "completion": "The answer is 20.", "completions": ["The answer is 20."]}
+{"id": 278, "answer": "81", "completion": "The answer is 81.", "completions": ["The answer is 81."]}
+{"id": 279, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 280, "answer": "21", "completion": "The answer is 21.", "completions": ["The answer is 21."]}
+{"id": 281, "answer": "$35", "completion": "The answer is $35.", "completions": ["The answer is $35."]}
+{"id": 282, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 283, "answer": "60", "completion": "The answer is 60.", "completions": ["The answer is 60."]}
+{"id": 284, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 285, "answer": "$60", "completion": "The answer is $60.", "completions": ["The answer is $60."]}
+{"id": 286, "answer": "48 dollars", "completion": "The answer is 48 dollars.", "completions": ["The answer is 48 dollars."]}
+{"id": 287, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 288, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 289, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 290, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 291, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 292, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 293, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 294, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 295, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 296, "answer": "48", "completion": "The answer is 48.", "completions": ["The answer is 48."]}
+{"id": 297, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 298, "answer": "27", "completion": "The answer is 27.", "completions": ["The answer is 27."]}
+{"id": 299, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 300, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 301, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 302, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 303, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 304, "answer": "9 weeks", "completion": "The answer is 9 weeks.", "completions": ["The answer is 9 weeks."]}
+{"id": 305, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 306, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 307, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 308, "answer": "4 hours", "completion": "The answer is 4 hours.", "completions": ["The answer is 4 hours."]}
+{"id": 309, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 310, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 311, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 312, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 313, "answer": "7 days", "completion": "The answer is 7 days.", "completions": ["The answer is 7 days."]}
+{"id": 314, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 315, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 316, "answer": "8 weeks", "completion": "The answer is 8 weeks.", "completions": ["The answer is 8 weeks."]}
+{"id": 317, "answer": "9 loads", "completion": "The answer is 9 loads.", "completions": ["The answer is 9 loads."]}
+{"id": 318, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 319, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 320, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 321, "answer": "8 weeks", "completion": "The answer is 8 weeks.", "completions": ["The answer is 8 weeks."]}
+{"id": 322, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 323, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 324, "answer": "2 days", "completion": "The answer is 2 days.", "completions": ["The answer is 2 days."]}
+{"id": 325, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 326, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 327, "answer": "5 days", "completion": "The answer is 5 days.", "completions": ["The answer is 5 days."]}
+{"id": 328, "answer": "3 vans", "completion": "The answer is 3 vans.", "completions": ["The answer is 3 vans."]}
+{"id": 329, "answer": "9 trips", "completion": "The answer is 9 trips.", "completions": ["The answer is 9 trips."]}
+{"id": 330, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 331, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 332, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 333, "answer": "9 days", "completion": "The answer is 9 days.", "completions": ["The answer is 9 days."]}
+{"id": 334, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 335, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 336, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 337, "answer": "9 weeks", "completion": "The answer is 9 weeks.", "completions": ["The answer is 9 weeks."]}
+{"id": 338, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 339, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 340, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 341, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 342, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 343, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 344, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 345, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 346, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 347, "answer": "It would take 9 days for all of them to be adopted", "completion": "It would take 9 days for all of them to be adopted.", "completions": ["It would take 9 days for all of them to be adopted."]}
+{"id": 348, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 349, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 350, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 351, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 352, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 353, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 354, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 355, "answer": "5 vases", "completion": "The answer is 5 vases.", "completions": ["The answer is 5 vases."]}
+{"id": 356, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 357, "answer": "9 days", "completion": "The answer is 9 days.", "completions": ["The answer is 9 days."]}
+{"id": 358, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 359, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 360, "answer": "9 days", "completion": "The answer is 9 days.", "completions": ["The answer is 9 days."]}
+{"id": 361, "answer": "5 hours", "completion": "The answer is 5 hours.", "completions": ["The answer is 5 hours."]}
+{"id": 362, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 363, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 364, "answer": "5 groups", "completion": "The answer is 5 groups.", "completions": ["The answer is 5 groups."]}
+{"id": 365, "answer": "4 pages", "completion": "The answer is 4 pages.", "completions": ["The answer is 4 pages."]}
+{"id": 366, "answer": "2 weeks", "completion": "The answer is 2 weeks.", "completions": ["The answer is 2 weeks."]}
+{"id": 367, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 368, "answer": "5 groups", "completion": "The answer is 5 groups.", "completions": ["The answer is 5 groups."]}
+{"id": 369, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 370, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 371, "answer": "3 vans", "completion": "The answer is 3 vans.", "completions": ["The answer is 3 vans."]}
+{"id": 372, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 373, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 374, "answer": "6 hours", "completion": "The answer is 6 hours.", "completions": ["The answer is 6 hours."]}
+{"id": 375, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 376, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 377, "answer": "2 days", "completion": "The answer is 2 days.", "completions": ["The answer is 2 days."]}
+{"id": 378, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 379, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 380, "answer": "3 loads", "completion": "The answer is 3 loads.", "completions": ["The answer is 3 loads."]}
+{"id": 381, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 382, "answer": "9 weeks", "completion": "The answer is 9 weeks.", "completions": ["The answer is 9 weeks."]}
+{"id": 383, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 384, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 385, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 386, "answer": "9 days", "completion": "The answer is 9 days.", "completions": ["The answer is 9 days."]}
+{"id": 387, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 388, "answer": "8 pages", "completion": "The answer is 8 pages.", "completions": ["The answer is 8 pages."]}
+{"id": 389, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 390, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 391, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 392, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 393, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 394, "answer": "4 trips", "completion": "The answer is 4 trips.", "completions": ["The answer is 4 trips."]}
+{"id": 395, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 396, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 397, "answer": "6 vans", "completion": "The answer is 6 vans.", "completions": ["The answer is 6 vans."]}
+{"id": 398, "answer": "2 days", "completion": "The answer is 2 days.", "completions": ["The answer is 2 days."]}
+{"id": 399, "answer": "9 weeks", "completion": "The answer is 9 weeks.", "completions": ["The answer is 9 weeks."]}
+{"id": 400, "answer": "36 hours", "completion": "The answer is 36 hours.", "completions": ["The answer is 36 hours."]}
+{"id": 401, "answer": "45 minutes", "completion": "The answer is 45 minutes.", "completions": ["The answer is 45 minutes."]}
+{"id": 402, "answer": "42", "completion": "The answer is 42.", "completions": ["The answer is 42."]}
+{"id": 403, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 404, "answer": "25", "completion": "The answer is 25.", "completions": ["The answer is 25."]}
+{"id": 405, "answer": "18", "completion": "The answer is 18.", "completions": ["The answer is 18."]}
+{"id": 406, "answer": "16 hours", "completion": "The answer is 16 hours.", "completions": ["The answer is 16 hours."]}
+{"id": 407, "answer": "12", "completion": "The answer is 12.", "completions": ["The answer is 12."]}
+{"id": 408, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 409, "answer": "$9", "completion": "The answer is $9.", "completions": ["The answer is $9."]}
+{"id": 410, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 411, "answer": "$15", "completion": "The answer is $15.", "completions": ["The answer is $15."]}
+{"id": 412, "answer": "$72", "completion": "The answer is $72.", "completions": ["The answer is $72."]}
+{"id": 413, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 414, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 415, "answer": "20 hours", "completion": "The answer is 20 hours.", "completions": ["The answer is 20 hours."]}
+{"id": 416, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 417, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 418, "answer": "$56", "completion": "The answer is $56.", "completions": ["The answer is $56."]}
+{"id": 419, "answer": "49 hours", "completion": "The answer is 49 hours.", "completions": ["The answer is 49 hours."]}
+{"id": 420, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 421, "answer": "27", "completion": "The answer is 27.", "completions": ["The answer is 27."]}
+{"id": 422, "answer": "$63", "completion": "The answer is $63.", "completions": ["The answer is $63."]}
+{"id": 423, "answer": "$42", "completion": "The answer is $42.", "completions": ["The answer is $42."]}
+{"id": 424, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 425, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 426, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 427, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 428, "answer": "4 dollars", "completion": "The answer is 4 dollars.", "completions": ["The answer is 4 dollars."]}
+{"id": 429, "answer": "36 minutes", "completion": "The answer is 36 minutes.", "completions": ["The answer is 36 minutes."]}
+{"id": 430, "answer": "18 hours", "completion": "The answer is 18 hours.", "completions": ["The answer is 18 hours."]}
+{"id": 431, "answer": "81 dollars", "completion": "The answer is 81 dollars.", "completions": ["The answer is 81 dollars."]}
+{"id": 432, "answer": "21", "completion": "The answer is 21.", "completions": ["The answer is 21."]}
+{"id": 433, "answer": "$10", "completion": "The answer is $10.", "completions": ["The answer is $10."]}
+{"id": 434, "answer": "32 hours", "completion": "The answer is 32 hours.", "completions": ["The answer is 32 hours."]}
+{"id": 435, "answer": "$20", "completion": "The answer is $20.", "completions": ["The answer is $20."]}
+{"id": 436, "answer": "$15", "completion": "The answer is $15.", "completions": ["The answer is $15."]}
+{"id": 437, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 438, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 439, "answer": "45 dollars", "completion": "The answer is 45 dollars.", "completions": ["The answer is 45 dollars."]}
+{"id": 440, "answer": "6 minutes", "completion": "The answer is 6 minutes.", "completions": ["The answer is 6 minutes."]}
+{"id": 441, "answer": "45 dollars", "completion": "The answer is 45 dollars.", "completions": ["The answer is 45 dollars."]}
+{"id": 442, "answer": "$18", "completion": "The answer is $18.", "completions": ["The answer is $18."]}
+{"id": 443, "answer": "24 hours", "completion": "The answer is 24 hours.", "completions": ["The answer is 24 hours."]}
+{"id": 444, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 445, "answer": "$28", "completion": "The answer is $28.", "completions": ["The answer is $28."]}
+{"id": 446, "answer": "20", "completion": "The answer is 20.", "completions": ["The answer is 20."]}
+{"id": 447, "answer": "$12", "completion": "The answer is $12.", "completions": ["The answer is $12."]}
+{"id": 448, "answer": "35 dollars", "completion": "The answer is 35 dollars.", "completions": ["The answer is 35 dollars."]}
+{"id": 449, "answer": "$32", "completion": "The answer is $32.", "completions": ["The answer is $32."]}
+{"id": 450, "answer": "48 hours", "completion": "The answer is 48 hours.", "completions": ["The answer is 48 hours."]}
+{"id": 451, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 452, "answer": "72 minutes", "completion": "The answer is 72 minutes.", "completions": ["The answer is 72 minutes."]}
+{"id": 453, "answer": "$30", "completion": "The answer is $30.", "completions": ["The answer is $30."]}
+{"id": 454, "answer": "64", "completion": "The answer is 64.", "completions": ["The answer is 64."]}
+{"id": 455, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 456, "answer": "40", "completion": "The answer is 40.", "completions": ["The answer is 40."]}
+{"id": 457, "answer": "63 hours", "completion": "The answer is 63 hours.", "completions": ["The answer is 63 hours."]}
+{"id": 458, "answer": "$32", "completion": "The answer is $32.", "completions": ["The answer is $32."]}
+{"id": 459, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 460, "answer": "14", "completion": "The answer is 14.", "completions": ["The answer is 14."]}
+{"id": 461, "answer": "36 dollars", "completion": "The answer is 36 dollars.", "completions": ["The answer is 36 dollars."]}
+{"id": 462, "answer": "$35", "completion": "The answer is $35.", "completions": ["The answer is $35."]}
+{"id": 463, "answer": "42", "completion": "The answer is 42.", "completions": ["The answer is 42."]}
+{"id": 464, "answer": "20 hours", "completion": "The answer is 20 hours.", "completions": ["The answer is 20 hours."]}
+{"id": 465, "answer": "$16", "completion": "The answer is $16.", "completions": ["The answer is $16."]}
+{"id": 466, "answer": "16", "completion": "The answer is 16.", "completions": ["The answer is 16."]}
+{"id": 467, "answer": "24 hours", "completion": "The answer is 24 hours.", "completions": ["The answer is 24 hours."]}
+{"id": 468, "answer": "63 minutes", "completion": "The answer is 63 minutes.", "completions": ["The answer is 63 minutes."]}
+{"id": 469, "answer": "35", "completion": "The answer is 35.", "completions": ["The answer is 35."]}
+{"id": 470, "answer": "48 minutes", "completion": "The answer is 48 minutes.", "completions": ["The answer is 48 minutes."]}
+{"id": 471, "answer": "45", "completion": "The answer is 45.", "completions": ["The answer is 45."]}
+{"id": 472, "answer": "$18", "completion": "The answer is $18.", "completions": ["The answer is $18."]}
+{"id": 473, "answer": "10", "completion": "The answer is 10.", "completions": ["The answer is 10."]}
+{"id": 474, "answer": "24", "completion": "The answer is 24.", "completions": ["The answer is 24."]}
+{"id": 475, "answer": "$27", "completion": "The answer is $27.", "completions": ["The answer is $27."]}
+{"id": 476, "answer": "27", "completion": "The answer is 27.", "completions": ["The answer is 27."]}
+{"id": 477, "answer": "18", "completion": "The answer is 18.", "completions": ["The answer is 18."]}
+{"id": 478, "answer": "$12", "completion": "The answer is $12.", "completions": ["The answer is $12."]}
+{"id": 479, "answer": "32", "completion": "The answer is 32.", "completions": ["The answer is 32."]}
+{"id": 480, "answer": "56 hours", "completion": "The answer is 56 hours.", "completions": ["The answer is 56 hours."]}
+{"id": 481, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 482, "answer": "$30", "completion": "The answer is $30.", "completions": ["The answer is $30."]}
+{"id": 483, "answer": "$72", "completion": "The answer is $72.", "completions": ["The answer is $72."]}
+{"id": 484, "answer": "27 dollars", "completion": "The answer is 27 dollars.", "completions": ["The answer is 27 dollars."]}
+{"id": 485, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 486, "answer": "21", "completion": "The answer is 21.", "completions": ["The answer is 21."]}
+{"id": 487, "answer": "56 dollars", "completion": "The answer is 56 dollars.", "completions": ["The answer is 56 dollars."]}
+{"id": 488, "answer": "30", "completion": "The answer is 30.", "completions": ["The answer is 30."]}
+{"id": 489, "answer": "$6", "completion": "The answer is $6.", "completions": ["The answer is $6."]}
+{"id": 490, "answer": "63 dollars", "completion": "The answer is 63 dollars.", "completions": ["The answer is 63 dollars."]}
+{"id": 491, "answer": "63", "completion": "The answer is 63.", "completions": ["The answer is 63."]}
+{"id": 492, "answer": "12", "completion": "The answer is 12.", "completions": ["The answer is 12."]}
+{"id": 493, "answer": "$30", "completion": "The answer is $30.", "completions": ["The answer is $30."]}
+{"id": 494, "answer": "36", "completion": "The answer is 36.", "completions": ["The answer is 36."]}
+{"id": 495, "answer": "$14", "completion": "The answer is $14.", "completions": ["The answer is $14."]}
+{"id": 496, "answer": "54", "completion": "The answer is 54.", "completions": ["The answer is 54."]}
+{"id": 497, "answer": "15", "completion": "The answer is 15.", "completions": ["The answer is 15."]}
+{"id": 498, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 499, "answer": "72", "completion": "The answer is 72.", "completions": ["The answer is 72."]}
+{"id": 500, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 501, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 502, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 503, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 504, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 505, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 506, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 507, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 508, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 509, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 510, "answer": "6 players", "completion": "The answer is 6 players.", "completions": ["The answer is 6 players."]}
+{"id": 511, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 512, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 513, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 514, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 515, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 516, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 517, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 518, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 519, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 520, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 521, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 522, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 523, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 524, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 525, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 526, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 527, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 528, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 529, "answer": "Mike will need 8 shelves", "completion": "Mike will need 8 shelves.", "completions": ["Mike will need 8 shelves."]}
+{"id": 530, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 531, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 532, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 533, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 534, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 535, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 536, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 537, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 538, "answer": "Jerry will need 9 shelves", "completion": "Jerry will need 9 shelves.", "completions": ["Jerry will need 9 shelves."]}
+{"id": 539, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 540, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 541, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 542, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 543, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 544, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 545, "answer": "6 packages", "completion": "The answer is 6 packages.", "completions": ["The answer is 6 packages."]}
+{"id": 546, "answer": "9 shelves", "completion": "The answer is 9 shelves.", "completions": ["The answer is 9 shelves."]}
+{"id": 547, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 548, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 549, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 550, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 551, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 552, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 553, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 554, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 555, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 556, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 558, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 559, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 560, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 561, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 562, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 563, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 564, "answer": "They used 81 / 9 = 9 cages", "completion": "The pet store had 102 - 21 = 81 puppies left.\nThey used 81 / 9 = 9 cages.", "completions": ["The pet store had 102 - 21 = 81 puppies left.\nThey used 81 / 9 = 9 cages."]}
+{"id": 565, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 566, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 567, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 568, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 569, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 570, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 571, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 572, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 573, "answer": "3 packages", "completion": "The answer is 3 packages.", "completions": ["The answer is 3 packages."]}
+{"id": 574, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 575, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 576, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 577, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 578, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 579, "answer": "5", "completion": "The answer is 5.", "completions": ["The answer is 5."]}
+{"id": 580, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 581, "answer": "6", "completion": "The answer is 6.", "completions": ["The answer is 6."]}
+{"id": 582, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 583, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 584, "answer": "2", "completion": "The answer is 2.", "completions": ["The answer is 2."]}
+{"id": 585, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 586, "answer": "8", "completion": "The answer is 8.", "completions": ["The answer is 8."]}
+{"id": 587, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 588, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 589, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 590, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 591, "answer": "4", "completion": "The answer is 4.", "completions": ["The answer is 4."]}
+{"id": 592, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 593, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 594, "answer": "9", "completion": "The answer is 9.", "completions": ["The answer is 9."]}
+{"id": 595, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 596, "answer": "3", "completion": "The answer is 3.", "completions": ["The answer is 3."]}
+{"id": 597, "answer": "7", "completion": "The answer is 7.", "completions": ["The answer is 7."]}
+{"id": 598, "answer": "3 packages", "completion": "The answer is 3 packages.", "completions": ["The answer is 3 packages."]}
+{"id": 599, "answer": "37 pictures in one album and 2 pictures in each of the other two albums", "completion": "The answer is 37 pictures in one album and 2 pictures in each of the other two albums.", "completions": ["The answer is 37 pictures in one album and 2 pictures in each of the other two albums."]}

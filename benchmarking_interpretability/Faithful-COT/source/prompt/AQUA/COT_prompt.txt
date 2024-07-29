@@ -1,0 +1,71 @@
+Q: A person is traveling at 20 km/hr and reached his destiny in 2.5 hr then find the distance?
+Answer Choices:
+(a) 53 km
+(b) 55 km
+(c) 52 km
+(d) 60 km
+(e) 50 km
+A: The distance that the person traveled would have been 20 km/hr * 2.5 hrs = 50 km. So the answer is (e).
+
+Q: John found that the average of 15 numbers is 40. If 10 is added to each number then the mean of the numbers is?
+Answer Choices:
+(a) 50
+(b) 45
+(c) 65
+(d) 78
+(e) 64
+A: If 10 is added to each number, then the mean of the numbers also increases by 10. So the new mean would be 50. So the answer is (a).
+
+Q: If a / b = 3/4 and 8a + 5b = 22,then find the value of a.
+Answer Choices:
+(a) 1/2
+(b) 3/2
+(c) 5/2
+(d) 4/2
+(e) 7/2
+A: If a / b = 3/4, then b = 4a / 3. So 8a + 5(4a / 3) = 22. This simplifies to 8a + 20a / 3 = 22, which means 44a / 3 = 22. So a is equal to 3/2. So the answer is (b).
+
+Q: How many keystrokes are needed to type the numbers from 1 to 500?
+Answer Choices:
+(a) 1156
+(b) 1392
+(c) 1480
+(d) 1562
+(e) 1788
+A: There are 9 one-digit numbers from 1 to 9. There are 90 two-digit numbers from 10 to 99. There are 401 three-digit numbers from 100 to 500. 9 + 90(2) + 401(3) = 1392 So the answer is (b).
+
+Q: Two friends plan to walk along a 43-km trail, starting at opposite ends of the trail at the same time. If Friend P's rate is 15% faster than Friend Q's, how many kilometers will Friend P have walked when they pass each other?
+Answer Choices:
+(a) 21
+(b) 21.5
+(c) 22
+(d) 22.5
+(e) 23
+A: If Q complete x kilometers, then P completes 1.15x kilometers. x + 1.15x = 43 2.15x=43 x = 43/2.15 = 20 Then P will have walked 1.15*20=23 km. So the answer is (e).
+
+Q: The entrance fee for a fair is $5 for persons under the age of 18, and 20% more for persons older. Each ride at the fair costs $0.50. If Joe goes with her 6 years old twin brothers, and they each took 3 rides in total. How much money does Joe end up spending at the fair?
+Answer Choices:
+(a) 16
+(b) 20.5
+(c) 17.5
+(d) 20
+(e) 4.5
+A: Total entrance fee is (2*$5) + (1.20*5)= $16. Total rides fee is (0.50*3)*3= $4.50. Total money spent is $20.50. So the answer is (b).
+
+Q: If Tim had lunch at $50 and he gave 20% tip, how much did he spend?
+Answer Choices:
+(a) $60.00
+(b) $35.42
+(c) $60.60
+(d) $21.56
+(e) $78.45
+A: The tip is 20% of what he paid for lunch. tip = 20% of 50.00 = (20/100)*50.00 = $10.00. Total spent 50.00 + 10.00 = $60.00. So the answer is (a).
+
+Q: A cheese factory sells its cheese in rectangular blocks. A normal block has a volume of 8 cubic feet. If a small block has half the width, half the depth, and half the length of a normal block, what is the volume of cheese in a small block in cubic feet?
+Answer Choices:
+(a) 1
+(b) 5
+(c) 4
+(d) 6
+(e) 2
+A: Volume of cube=lbh=8. New cube l ,b, h are decreases of .5l, .5b,.5h. New volume of cube =.5l*.5b*.5h=.125*lbh =.125*8 =1. So the answer is (a).

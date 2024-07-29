@@ -1,0 +1,4 @@
+Question: [QUESTION]
+Answer option: [OPTIONS]
+Prediction: [ANSWER]
+Closest Option:

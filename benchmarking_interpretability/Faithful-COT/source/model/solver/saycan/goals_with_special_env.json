@@ -1,0 +1,7 @@
+{
+  "(:goal (not (inventory me coke)))": "let-go-of-coke",
+  "(:goal (not (at jalapeno-chips counter)))": "clean-jalapeno-chips-off-counter",
+  "(:goal (or (at tea counter) (at coke counter) (at pepsi counter) (at redbull counter)))": "move-caffine-from-table-to-counter",
+  "(:goal (exists (?i - item) (and (at ?i counter) (is-caffeinated ?i))))": "move-caffine-from-table-to-counter",
+  "(:goal (exists (?i - item) (and (is-caffeinated ?i) (at ?i counter) (not (at ?i table)))))": "move-caffine-from-table-to-counter"
+}

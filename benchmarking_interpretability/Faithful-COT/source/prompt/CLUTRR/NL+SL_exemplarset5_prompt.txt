@@ -1,0 +1,93 @@
+# Context: [Mark] has a sibling who is much younger than he is. They get along well and his name is [Craig]. [Molly] and her daughter [Marian] are looking to throw a surprise party. The party is for [Marian]'s son [Craig].
+# Question: How is [Molly] related to [Mark]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Marian]? (independent, support: "[Molly] and her daughter [Marian] are looking to throw a surprise party.")
+relation(Molly, Marian) = mother
+# 2. How is [Marian] related to [Craig]? (independent, support: "The party is for [Marian]'s son [Craig].")
+relation(Marian, Craig) = mother
+# 3. How is [Craig] related to [Mark]? (independent, support: "[Mark] has a sibling who is much younger than he is. They get along well and his name is [Craig].")
+relation(Craig, Mark) = brother
+# 4. Final answer: How is [Molly] related to [Mark]? (depends on 1, 2, 3)
+relation(Molly, Mark) = relation(Molly, Marian) @ relation(Marian, Craig) @ relation(Craig, Mark)
+
+# Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+# Question: How is [Annie] related to [James]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Annie] related to [Alan]? (independent, support: "[Alan] loves his daughter [Annie].")
+relation(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Elliott]? (independent, support: "[Alan] love his brother [Elliott].")
+relation(Alan, Elliott) = brother
+# 3. How is [Elliott] related to [James]? (independent, support: "[Elliott] is excited to cheer on his brother [James] in the homecoming game tonight.")
+relation(Elliott, James) = brother
+# 4. Final answer: How is [Annie] related to [James]? (depends on 1, 2, 3)
+relation(Annie, James) = relation(Annie, Alan) @ relation(Alan, Elliott) @ relation(Elliott, James)
+
+# Context: [Matthew] called his mother [Sandra] on the phone, but she was too busy to talk. She was busy making dinner for her son, [Anthony], and his grandmother [Molly], who were visiting.
+# Question: How is [Molly] related to [Matthew]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Anthony]? (independent, support: "She was busy making dinner for her son, [Anthony], and his grandmother [Molly], who were visiting.")
+relation(Molly, Anthony) = grandmother
+# 2. How is [Anthony] related to [Sandra]? (independent, support: "She was busy making dinner for her son, [Anthony], and his grandmother [Molly], who were visiting.")
+relation(Anthony, Sandra) = son
+# 3. How is [Sandra] related to [Matthew]? (independent, support: "[Matthew] called his mother [Sandra] on the phone, but she was too busy to talk.")
+relation(Sandra, Matthew) = mother
+# 4. Final answer: How is [Molly] related to [Matthew]? (depends on 1, 2, 3)
+relation(Molly, Matthew) = relation(Molly, Anthony) @ relation(Anthony, Sandra) @ relation(Sandra, Matthew)
+
+# Context: [Valerie] asked her brother, [Michael], what he was doing this weekend. [Michael] told her he was spending it with his brother [James]. [Valerie] took her son [Carlos] shopping for new school clothes. They had a good time.
+# Question: How is [James] related to [Carlos]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [James] related to [Michael]? (independent, support: "[Michael] told her he was spending it with his brother [James].")
+relation(James, Michael) = brother
+# 2. How is [Michael] related to [Valerie]? (independent, support: "[Valerie] asked her brother, [Michael], what he was doing this weekend.")
+relation(Michael, Valerie) = brother
+# 3. How is [Valerie] related to [Carlos]? (independent, support: "[Valerie] took her son [Carlos] shopping for new school clothes.")
+relation(Valerie, Carlos) = mother
+# 4. Final answer: How is [James] related to [Carlos]? (depends on 1, 2, 3)
+relation(James, Carlos) = relation(James, Michael) @ relation(Michael, Valerie) @ relation(Valerie, Carlos)
+
+# Context: [Jason] and her sister [Elizabeth] decided to take a trip to Mexico together. [Alan] took his daughter [Venita] to school Monday. [Venita]'s sister [Elizabeth] was already there because she got a ride with one of her friends.
+# Question: How is [Jason] related to [Alan]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Jason] related to [Elizabeth]? (independent, support: "[Jason] and her sister [Elizabeth] decided to take a trip to Mexico together.")
+relation(Jason, Elizabeth) = brother
+# 2. How is [Elizabeth] related to [Venita]? (independent, support: "[Venita]'s sister [Elizabeth] was already there because she got a ride with one of her friends.")
+relation(Elizabeth, Venita) = sister
+# 3. How is [Venita] related to [Alan]? (independent, support: "[Alan] took his daughter [Venita] to school Monday.")
+relation(Venita, Alan) = daughter
+# 4. Final answer: How is [Jason] related to [Alan]? (depends on 1, 2, 3)
+relation(Jason, Alan) = relation(Jason, Elizabeth) @ relation(Elizabeth, Venita) @ relation(Venita, Alan)
+
+# Context: [Carlos] and his sister, [Annie], went shopping. [Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no. [Carlos] is [Clarence]'s Brother.
+# Question: How is [Valerie] related to [Clarence]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Valerie] related to [Annie]? (independent, support: "[Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no.")
+relation(Valerie, Annie) = mother
+# 2. How is [Annie] related to [Carlos]? (independent, support: "[Carlos] and his sister, [Annie], went shopping.")
+relation(Annie, Carlos) = sister
+# 3. How is [Carlos] related to [Clarence]? (independent, support: "[Carlos] is [Clarence]'s Brother.")
+relation(Carlos, Clarence) = brother
+# 4. Final answer: How is [Valerie] related to [Clarence]? (depends on 1, 2, 3)
+relation(Valerie, Clarence) = relation(Valerie, Annie) @ relation(Annie, Carlos) @ relation(Carlos, Clarence) 
+
+# Context: [Christopher] and his son [Jose] were working in their vegetable garden in the backyard. [Gabrielle] asked [Christopher], her son, to bring her carrots, tomatoes, and potatoes, for the stew she was making for dinner.
+# Question: How is [Jose] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Jose] related to [Christopher]? (independent, support: "[Christopher] and his son [Jose] were working in their vegetable garden in the backyard.")
+relation(Jose, Christopher) = son
+# 2. How is [Christopher] related to [Gabrielle]? (independent, support: "[Gabrielle] asked [Christopher], her son, to bring her carrots, tomatoes, and potatoes, for the stew she was making for dinner.")
+relation(Christopher, Gabrielle) = son
+# 3. Final answer: How is [Jose] related to [Gabrielle]? (depends on 1, 2)
+relation(Jose, Gabrielle) = relation(Jose, Christopher) @ relation(Christopher, Gabrielle)
+
+# Context: [Anthony]'s brother, [Matthew] went sailing with his other brother, [Lee]. [Stanley] was so proud of his Grandson [Anthony] for winning the state championship game.
+# Question: How is [Lee] related to [Stanley]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Lee] related to [Matthew]? (independent, support: "[Anthony]'s brother, [Matthew] went sailing with his other brother, [Lee].")
+relation(Lee, Matthew) = brother
+# 2. How is [Matthew] related to [Anthony]? (independent, support: "[Anthony]'s brother, [Matthew] went sailing with his other brother, [Lee].")
+relation(Matthew, Anthony) = brother
+# 3. How is [Anthony] related to [Stanley]? (independent, support: "[Stanley] was so proud of his Grandson [Anthony] for winning the state championship game.")
+relation(Anthony, Stanley) = grandson
+# 4. Final answer: How is [Lee] related to [Stanley]? (depends on 1, 2, 3)
+relation(Lee, Stanley) = relation(Lee, Matthew) @ relation(Matthew, Anthony) @ relation(Anthony, Stanley)

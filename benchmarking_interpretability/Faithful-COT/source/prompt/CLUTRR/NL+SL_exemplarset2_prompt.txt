@@ -1,0 +1,89 @@
+# Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+# Question: How is [Jason] related to [Myrna]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Jason] related to [Guillermina]? (independent, support: "[Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit.")
+relation(Jason, Guillermina) = grandfather
+# 2. How is [Guillermina] related to [Myrna]? (independent, support: "So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.")
+relation(Guillermina, Myrna) = daughter
+# 3. Final answer: How is [Jason] related to [Myrna]? (depends on 1, 2)
+relation(Jason, Myrna) = relation(Jason, Guillermina) @ relation(Guillermina, Myrna)
+
+# Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+# Question: How is [Vincent] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Vincent] related to [Dorothy]? (independent, support: "[Dorothy]'s son [Vincent] showed up shortly after.")
+relation(Vincent, Dorothy) = son
+# 2. How is [Dorothy] related to [Gabrielle]? (independent, support: "[Gabrielle] drove her daughter [Dorothy] to the hospital.")
+relation(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Vincent] related to [Gabrielle]? (depends on 1, 2)
+relation(Vincent, Gabrielle) = relation(Vincent, Dorothy) @ relation(Dorothy, Gabrielle)
+
+# Context: [Teresa] and her brother [Ellis] were having a wonderful time at Disneyland. [Ellis] asked his grandmother, [Molly], to read him a bedtime story. [Molly] read him Hansel & Gretel, which the boy always loved. [Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.
+# Question: How is [Molly] related to [Sandra]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Ellis]? (independent, support: "[Ellis] asked his grandmother, [Molly], to read him a bedtime story.")
+relation(Molly, Ellis) = grandmother
+# 2. How is [Ellis] related to [Teresa]? (independent, support: "[Teresa] and her brother [Ellis] were having a wonderful time at Disneyland.")
+relation(Ellis, Teresa) = brother
+# 3. How is [Teresa] related to [Sandra]? (independent, support: "[Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.")
+relation(Teresa, Sandra) = daughter
+# 4. Final answer: How is [Molly] related to [Sandra]? (depends on 1, 2, 3)
+relation(Molly, Sandra) = relation(Molly, Ellis) @ relation(Ellis, Teresa) @ relation(Teresa, Sandra) 
+
+# Context: [Marian]'s sister, [Michelle], recently started acting. [Thomas]'s brother, [Jeremy], brought the car over to help him. [Michelle] and her son [Jeremy] had lunch together at a local Chinese restaurant.
+# Question: How is [Marian] related to [Thomas]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Marian] related to [Michelle]? (independent, support: "[Marian]'s sister, [Michelle], recently started acting.")
+relation(Marian, Michelle) = sister
+# 2. How is [Michelle] related to [Jeremy]? (independent, support: "[Michelle] and her son [Jeremy] had lunch together at a local Chinese restaurant.")
+relation(Michelle, Jeremy) = mother
+# 3. How is [Jeremy] related to [Thomas]? (independent, support: "[Thomas]'s brother, [Jeremy], brought the car over to help him.")
+relation(Jeremy, Thomas) = brother
+# 4. Final answer: How is [Marian] related to [Thomas]? (depends on 1, 2, 3)
+relation(Marian, Thomas) = relation(Marian, Michelle) @ relation(Michelle, Jeremy) @ relation(Jeremy, Thomas)
+
+# Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+# Question: How is [Annie] related to [James]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Annie] related to [Alan]? (independent, support: "[Alan] loves his daughter [Annie].")
+relation(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Elliott]? (independent, support: "[Alan] love his brother [Elliott].")
+relation(Alan, Elliott) = brother
+# 3. How is [Elliott] related to [James]? (independent, support: "[Elliott] is excited to cheer on his brother [James] in the homecoming game tonight.")
+relation(Elliott, James) = brother
+# 4. Final answer: How is [Annie] related to [James]? (depends on 1, 2, 3)
+relation(Annie, James) = relation(Annie, Alan) @ relation(Alan, Elliott) @ relation(Elliott, James)
+
+# Context: [Lisa] went to the arcade with her niece, [Aida]. They had lots of fun playing together. [Dorothy] and her daughter [Aida] are entering the competition together.
+# Question: How is [Lisa] related to [Dorothy]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Lisa] related to [Aida]? (independent, support: "[Lisa] went to the arcade with her niece, [Aida].")
+relation(Lisa, Aida) = aunt
+# 2. How is [Aida] related to [Dorothy]? (independent, support: "[Dorothy] and her daughter [Aida] are entering the competition together.")
+relation(Aida, Dorothy) = daughter
+# 3. Final answer: How is [Lisa] related to [Dorothy]? (depends on 1, 2)
+relation(Lisa, Dorothy) = relation(Lisa, Aida) @ relation(Aida, Dorothy)
+
+# Context: [Michael] loves cooking with his daughter. Her name is [Angela]. [Thomas] and his brother [Jeremy] are very close. [Jeremy] does not get along well with his sister [Angela].
+# Question: How is [Michael] related to [Thomas]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Michael] related to [Angela]? (independent, support: "[Michael] loves cooking with his daughter. Her name is [Angela].")
+relation(Michael, Angela) = father
+# 2. How is [Angela] related to [Jeremy]? (independent, support: "[Jeremy] does not get along well with his sister [Angela].")
+relation(Angela, Jeremy) = sister
+# 3. How is [Jeremy] related to [Thomas]? (independent, support: "[Thomas] and his brother [Jeremy] are very close.")
+relation(Jeremy, Thomas) = brother
+# 4. Final answer: How is [Michael] related to [Thomas]? (depends on 1, 2, 3)
+relation(Michael, Thomas) = relation(Michael, Angela) @ relation(Angela, Jeremy) @ relation(Jeremy, Thomas)
+
+# Context: [Mark] has a sibling who is much younger than he is. They get along well and his name is [Craig]. [Molly] and her daughter [Marian] are looking to throw a surprise party. The party is for [Marian]'s son [Craig].
+# Question: How is [Molly] related to [Mark]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Marian]? (independent, support: "[Molly] and her daughter [Marian] are looking to throw a surprise party.")
+relation(Molly, Marian) = mother
+# 2. How is [Marian] related to [Craig]? (independent, support: "The party is for [Marian]'s son [Craig].")
+relation(Marian, Craig) = mother
+# 3. How is [Craig] related to [Mark]? (independent, support: "[Mark] has a sibling who is much younger than he is. They get along well and his name is [Craig].")
+relation(Craig, Mark) = brother
+# 4. Final answer: How is [Molly] related to [Mark]? (depends on 1, 2, 3)
+relation(Molly, Mark) = relation(Molly, Marian) @ relation(Marian, Craig) @ relation(Craig, Mark)

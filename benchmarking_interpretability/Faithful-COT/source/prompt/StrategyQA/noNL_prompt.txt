@@ -1,0 +1,73 @@
+// We answer a multi-hop question by writing a Datalog program.
+// In Datalog, we can
+// use these variable dtypes: "symbol" and "float",
+// define relations with ".decl" (and reuse it without having to redefine),
+// define rules with ":-",
+// negate a fact with "!",
+// use arithmetic functors "+", "-", "/", "*", "^",
+// compare two variables with "=", "!=", ">", "<", ">=", "<=".
+
+
+// Q: Do hamsters provide food for any animals?
+.decl Eats(Animal_A:symbol, Animal_B:symbol)
+Eats("snake", "hamster").
+Eats("bird", "hamster").
+.decl Answer()
+Answer() :- Eats(animal, "hamster").
+.output Answer
+
+
+// Q: Could Brooke Shields succeed at University of Pennsylvania?
+.decl Graduates(Person:symbol, University:symbol)
+Graduates("Brooke Shields", "Princeton University").
+.decl Ranks(University:symbol, Rank:float)
+Ranks("Princeton University", 1).
+Ranks("University of Pennsylvania", 7).
+.decl Answer()
+Answer() :- Graduates("Brooke Shields", "University of Pennsylvania").
+Answer() :- Graduates("Brooke Shields", university2), Ranks(university2, rank2), Ranks("University of Pennsylvania", rank1), rank2 <= rank1.
+.output Answer
+
+
+// Q: Hydrogen's atomic number squared exceeds number of Spice Girls?
+.decl Has_atomic_number(Element:symbol, Atomic_number:float)
+Has_atomic_number("hydrogen", 1).
+.decl Has_n_members(Group:symbol, N_members:float)
+Has_n_members("Spice Girls", 5).
+.decl Answer()
+Answer() :- Has_atomic_number("hydrogen", atomic_number), Has_n_members("Spice Girls", n_members), atomic_number^2 > n_members.
+.output Answer
+
+
+// Q: Is it common to see frost during some college commencements?
+.decl Happens_in_time(Event:symbol, Time:symbol)
+Happens_in_time("frost", "winter").
+Happens_in_time("college commencements", "December").
+Happens_in_time("college commencements", "May").
+Happens_in_time("college commencements", "June").
+.decl In_season(Month:symbol, Season:symbol)
+In_season("December", "winter").
+In_season("May", "spring").
+In_season("June", "summer").
+.decl Answer()
+Answer() :- Happens_in_time("frost", season), Happens_in_time("college commencements", month), In_season(month, season).
+.output Answer
+
+
+// Q: Could a llama birth twice during War in Vietnam (1945-46)?
+.decl Last_n_months(Event:symbol, N_months:float)
+Last_n_months("War in Vietnam", 6).
+.decl Happens_every_n_months(Event:symbol, N_months:float)
+Happens_every_n_months("llama birth", 11).
+.decl Answer()
+Answer() :- Happens_every_n_months("llama birth", n_months1), Last_n_months("War in Vietnam", n_months2),  n_months1 <= n_months2.
+.output Answer
+
+
+// Q: Would a pear sink in water?
+.decl Has_density(Object:symbol, Density:float)
+Has_density("pear", 0.6).
+Has_density("water", 1).
+.decl Answer()
+Answer() :- Has_density("pear", density1), Has_density("water", density2), density1 > density2.
+.output Answer

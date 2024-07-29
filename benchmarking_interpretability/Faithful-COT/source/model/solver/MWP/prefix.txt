@@ -1,0 +1,18 @@
+from sympy import Symbol, Eq, simplify, solve
+import math
+from math import *
+
+def lcm(a,b): # for backwards compatibility with Python<3.9
+	return (a * b) // math.gcd(a,b)
+
+def solve_it(equation, variable):
+	solution = solve(equation, variable, dict=True)
+	if not solution:
+		if isinstance(variable, list):
+			solution = {v: None for v in variable}
+		else:
+			solution = {variable: None}
+		return solution
+	else:
+		solution = solution[0]
+		return solution

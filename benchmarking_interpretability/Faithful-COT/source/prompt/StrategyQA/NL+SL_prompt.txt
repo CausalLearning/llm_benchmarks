@@ -1,0 +1,157 @@
+// We answer a multi-hop question by writing a Datalog program.
+// In Datalog, we can
+// use these variable dtypes: "symbol" and "float",
+// define relations with ".decl" (and reuse it without having to redefine),
+// define rules with ":-",
+// negate a fact with "!",
+// use arithmetic functors "+", "-", "/", "*", "^",
+// compare two variables with "=", "!=", ">", "<", ">=", "<=".
+
+// Given each question, we first decompose it into subquestions and answer them, represent the answers as Datalog code, and derive the final answer.
+// We start now.
+
+
+// Q: Do hamsters provide food for any animals?
+
+// To answer this question, we answer the following subquestions:
+// 1. Are there any animals that eat hamsters?
+// Animals that prey on hamsters include snakes, birds, etc.
+
+// Then, we represent these answers in Datalog:
+// 1. Animals that prey on hamsters include snakes, birds, etc.
+.decl Eats(Animal_A:symbol, Animal_B:symbol)
+Eats("snake", "hamster").
+Eats("bird", "hamster").
+
+// Now, we derive the final answer: Do hamsters provide food for any animals?
+// The answer is Yes only if there exists an animal that eats hamsters.
+.decl Answer()
+Answer() :- Eats(animal, "hamster").
+.output Answer
+
+
+// Q: Could Brooke Shields succeed at University of Pennsylvania?
+
+// To answer this question, we answer the following subquestions:
+// 1. Which university did Brooke Shields graduate from?
+// Brooke Shields graduated from Princeton University.
+// 2. What is the US news ranking of Princeton University?
+// Princeton University has a US news ranking of 1.
+// 3. What is the US news ranking of University of Pennsylvania?
+// University of Pennsylvania has a US news ranking of 7.
+
+// Then, we represent these answers in Datalog:
+// 1. Brooke Shields graduated from Princeton University.
+.decl Graduates(Person:symbol, University:symbol)
+Graduates("Brooke Shields", "Princeton University").
+// 2. Princeton University has a US news ranking of 1.
+.decl Ranks(University:symbol, Rank:float)
+Ranks("Princeton University", 1).
+// 3. University of Pennsylvania has a US news ranking of 7.
+Ranks("University of Pennsylvania", 7).
+
+// Now, we derive the final answer: Could Brooke Shields succeed at University of Pennsylvania?
+// The answer is Yes only if Brooke Shields graduated from University of Pennsylvania, or from another university that ranks at least as high as University of Pennsylvania.
+.decl Answer()
+Answer() :- Graduates("Brooke Shields", "University of Pennsylvania").
+Answer() :- Graduates("Brooke Shields", university2), Ranks(university2, rank2), Ranks("University of Pennsylvania", rank1), rank2 <= rank1.
+.output Answer
+
+
+// Q: Hydrogen's atomic number squared exceeds number of Spice Girls?
+
+// To answer this question, we answer the following subquestions:
+// 1. What is the atomic number of hydrogen?
+// Hydrogen has an atomic number of 1.
+// 2. How many members are there in Spice Girls?
+// Spice Girls has 5 members.
+
+// Then, we represent these answers in Datalog:
+// 1. Hydrogen has an atomic number of 1.
+.decl Has_atomic_number(Element:symbol, Atomic_number:float)
+Has_atomic_number("hydrogen", 1).
+// 2. Spice Girls has 5 members.
+.decl Has_n_members(Group:symbol, N_members:float)
+Has_n_members("Spice Girls", 5).
+
+// Now, we derive the final answer: Hydrogen's atomic number squared exceeds number of Spice Girls?
+// The answer is Yes only if the atomic number of hydrogen squared is larger than the number of members in Spice Girls.
+.decl Answer()
+Answer() :- Has_atomic_number("hydrogen", atomic_number), Has_n_members("Spice Girls", n_members), atomic_number^2 > n_members.
+.output Answer
+
+
+// Q: Is it common to see frost during some college commencements?
+
+// To answer this question, we answer the following subquestions:
+// 1. What season can we see frost?
+// We can see frost in winter.
+// 2. In what months do college commencements happen?
+// College commencement ceremonies can happen in December, May, and June.
+// 3. What season is each of the above months in?
+// December is in winter, May is in spring, and June is in summer.
+
+// Then, we represent these answers in Datalog:
+// 1. We can see frost in winter.
+.decl Happens_in_time(Event:symbol, Time:symbol)
+Happens_in_time("frost", "winter").
+// 2. College commencement ceremonies can happen in December, May, and June.
+Happens_in_time("college commencements", "December").
+Happens_in_time("college commencements", "May").
+Happens_in_time("college commencements", "June").
+// 3. December is in winter, May is in spring, and June is in summer.
+.decl In_season(Month:symbol, Season:symbol)
+In_season("December", "winter").
+In_season("May", "spring").
+In_season("June", "summer").
+
+// Now, we derive the final answer: Is it common to see frost during some college commencements?
+// The answer is Yes only if there exists a month in which college commencement happens and the month is in the season of frost.
+.decl Answer()
+Answer() :- Happens_in_time("frost", season), Happens_in_time("college commencements", month), In_season(month, season).
+.output Answer
+
+
+// Q: Could a llama birth twice during War in Vietnam (1945-46)?
+
+// To answer this question, we answer the following subquestions:
+// 1. How long does War in Vietnam last?
+// War in Vietnam (1945-46) lasts from September 1945 to March 1946, which is 6 months.
+// 2. How often does a llama birth happen?
+// A llama's full gestation is around 11 months, so a llama births once every 11 months.
+
+// Then, we represent these answers in Datalog:
+// 1. War in Vietnam (1945-46) lasts from September 1945 to March 1946, which is 6 months.
+.decl Last_n_months(Event:symbol, N_months:float)
+Last_n_months("War in Vietnam", 6).
+// A llama's full gestation is around 11 months, so a llama births once every 11 months.
+.decl Happens_every_n_months(Event:symbol, N_months:float)
+Happens_every_n_months("llama birth", 11).
+
+// Now, we derive the final answer: Could a llama birth twice during War in Vietnam (1945-46)?
+// The answer is Yes only if the gestation period of a llama birth is no longer than the duration of War in Vietnam.
+.decl Answer()
+Answer() :- Happens_every_n_months("llama birth", n_months1), Last_n_months("War in Vietnam", n_months2),  n_months1 <= n_months2.
+.output Answer
+
+
+// Q: Would a pear sink in water?
+
+// To answer this question, we answer the following subquestions:
+// 1. What is the density of a pear?
+// The density of a pear is about 0.6 g/cm^3.
+// 2. What is the density of water?
+// Water has a density of 1 g/cm^3.
+
+// Then, we represent these answers in Datalog:
+// 1. The density of a pear is about 0.6 g/cm^3.
+.decl Has_density(Object:symbol, Density:float)
+Has_density("pear", 0.6).
+// 2. Water has a density of 1 g/cm^3.
+Has_density("water", 1).
+
+// Now, we derive the final answer: Would a pear sink in water?
+// The answer is Yes only if the density of a pear is more than the density of water.
+.decl Answer()
+Answer() :- Has_density("pear", density1), Has_density("water", density2), density1 > density2.
+.output Answer

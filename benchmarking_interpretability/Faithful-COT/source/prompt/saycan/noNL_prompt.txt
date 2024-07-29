@@ -1,0 +1,133 @@
+; I'm a robot. Given a user query in Natural Language, my task is to parse it into a goal in Planning Domain Definition Language (PDDL).
+
+; Type definition: the hierarchy of object types.
+(:types
+	robot location item - object 	; object includes robot, location, and item
+	snack drink tool - item			; item includes snack, drink, and tool
+	fruit non-fruit - snack 		; snack includes fruit and non-fruit
+	soda non-soda - drink 			; drink includes soda and non-soda
+)
+
+; Object definition: specific objects of each object type defined above.
+(:objects
+	me - robot 																		; me, the robot
+	counter table user trash bowl initial - location								; all locations
+	apple orange - fruit 															; all fruit snacks
+	kettle-chips multigrain-chips jalapeno-chips rice-chips energy-bar - non-fruit 	; all non-fruit snacks
+	seven-up coke lime-soda grapefruit-soda pepsi - soda 							; all soda drinks
+	tea redbull water - non-soda 													; all non-soda drinks
+	sponge - tool 																	; all tools
+)
+
+; Predicate definition: relations between objects.
+(:predicates
+  (at ?obj - object ?loc - location)	; an object is at a location
+  (inventory ?r - robot ?itm - item)  	; an item is in the robot's inventory
+  (visited ?loc - location)			    ; a location is visited
+  (is-caffeinated ?i - item)			; an item is caffeinated
+  (is-salty ?i - item)				    ; an item is salty
+  (is-sweet ?i - item)				    ; an item is sweet
+  (is-spicy ?i - item)				    ; an item is spicy
+  (is-clear ?i - item)				    ; an item is clear in color
+  (is-refreshing ?i - item)			    ; an item is refreshing
+)
+
+; When parsing the user query into a goal, I can only use the types, objects, and predicates defined above, and the following logical operators:
+; (and (statement1) (statement2) ...) ; all the statements are true
+; (or (statement1) (statement2) ...) ; at least one of the statements are true
+; (not (statement)) ; the statement is not true
+; (forall (type specification) (statement)) ; for all objects of the specified type, the statement is true
+; (exists (type specification) (statement)); there exists an object of the specified type such that the statement is true
+; (= (object1) (object2)) ; object1 and object2 are equivalent
+; (imply (statement1) (statement2)) ; if statement1 is true, then statement2 is true
+
+; I begin parsing now.
+
+User query: Can you go to the counter, the trash, and then to me?
+Goal in PDDL:
+(:goal
+	(and
+		(visited counter)
+		(visited trash)
+		(at me user)
+	)
+)
+
+User query: How would you compost the redbull and bring me a cleaning tool?
+Goal in PDDL:
+(:goal
+	(and
+		(at redbull trash)
+		(at sponge user)
+	)
+)
+
+User query: Bring me something not sweet to eat.
+Goal in PDDL:
+(:goal
+	(exists (?s - snack)
+		(and
+			(not (is-sweet ?s))
+			(at ?s user)
+		)
+	)
+)
+
+User query: Can you lift a fruit and hold it in your gripper?
+Goal in PDDL:
+(:goal
+	(exists (?f - fruit)
+		(inventory me ?f)
+	)
+)
+
+User query: Move all caffeinated sodas from the table to the counter.
+Goal in PDDL:
+(:goal
+	(forall (?s - soda)
+		(imply
+			(is-caffeinated ?s)
+			(and
+                (not (at ?s table))
+                (at ?s counter)
+            )
+		)
+	)
+)
+
+User query: I don't like oranges. Can you bring me two different things to eat?
+Goal in PDDL:
+(:goal
+	(exists (?s1 - snack ?s2 - snack)
+		(and
+			(at ?s1 user)
+			(at ?s2 user)
+			(not (= ?s1 ?s2))
+			(not (= ?s1 orange))
+			(not (= ?s2 orange))
+		)
+	)
+)
+
+User query: Set up my dinner at the table: a bag of chips, a fruit, and a drink that is not a pepsi or a coke.
+Goal in PDDL:
+(:goal
+	(and
+		(or
+			(at kettle-chips table)
+			(at multigrain-chips table)
+			(at jalapeno-chips table)
+			(at rice-chips table)
+		)
+		(exists (?f - fruit)
+			(at ?f table)
+		)
+		(exists (?d - drink)
+			(and
+				(at ?d table)
+				(not (= ?d pepsi))
+				(not (= ?d coke))
+			)
+		)
+	)
+)

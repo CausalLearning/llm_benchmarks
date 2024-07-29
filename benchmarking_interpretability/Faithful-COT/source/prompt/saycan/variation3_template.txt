@@ -1,0 +1,2 @@
+User input: [QUESTION]
+PDDL goal:

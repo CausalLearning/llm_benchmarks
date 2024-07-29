@@ -1,0 +1,129 @@
+# Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many trees are there in the beginning? (independent, support: ["There are 15 trees"])
+trees_begin = 15
+# 2. How many trees are there in the end? (independent, support: ["there will be 21 trees"])
+trees_end = 21
+# 3. How many trees did the grove workers plant today? (depends on 1 and 2, support: [])
+trees_today = trees_end - trees_begin
+# 4. Final Answer: How many trees did the grove workers plant today? (depends on 3, support: [])
+answer = trees_today
+
+# Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many computers were there in the beginning? (independent, support: ["There were nine computers"])
+computers_begin = 9
+# 2. How many computers were installed each day? (independent, support: ["Five more computers were installed each day"])
+computers_each_day = 5
+# 3. How many days were there from monday to thursday? (independent, support: ["External knowledge: days of the week are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, so there are 4 days from Monday to Thursday"])
+days_monday_to_thursday = 4
+# 4. How many new computers were installed? (depends on 2 and 3, support: [])
+computers_new = 0
+for i in range(days_monday_to_thursday):
+    computers_new += computers_each_day
+# 5. How many computers are now in the server room? (depends on 1 and 4, support: [])
+computers_now = computers_begin + computers_new
+# 6. Final Answer: How many computers are now in the server room? (depends on 5, support: [])
+answer = computers_now
+
+# Q: Danny has 3 bottles of soda. He drinks 90% of one bottle and gives 70% of the other two bottles to his friends. How much soda does Danny have left, expressed as a percentage of a bottle?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How much of one bottle did Danny drink? (independent, support: ["He drinks 90% of one bottle"])
+fraction_bottle_drink = 0.9
+# 2. How much of the other two bottles did Danny give to his friends? (independent, support: ["gives 70% of the other two bottles to his friends"])
+fraction_bottle_give = 0.7
+# 3. How much soda is left in the bottle Danny drank from? (depends on 1, support: [])
+fraction_bottle_drink_left = 1 - fraction_bottle_drink
+# 4. How much soda is left in the two bottles Danny gave his friends? (depends on 2, support: [])
+fraction_bottle_give_left = (1 - fraction_bottle_give) * 2
+# 5. How much soda does Danny have left in total? (depends on 3 and 4, support: [])
+fraction_soda_left = fraction_bottle_drink_left + fraction_bottle_give_left
+# 6. How much soda does Danny have left in total, expressed as a percentage of a bottle? (depends on 5, support: ["External knowledge: fraction multiplied by 100 is a percent"])
+percent_soda_left = fraction_soda_left * 100
+# 7. Final Answer: How much soda does Danny have left, expressed as a percentage of a bottle? (depends on 6, support: [])
+answer = percent_soda_left
+
+# Q: In a fruit salad, there are raspberries, green grapes, and red grapes. There are seven more than 3 times the number of red grapes as green grapes. There are 5 less raspberries than green grapes. If there are 102 pieces of fruit in the salad, how many red grapes are in the salad?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many green grapes are there? (independent, support: [])
+green_grapes = Symbol("green_grapes")
+# 2. How many red grapes are there? (depends on 1, support: ["There are seven more than 3 times the number of red grapes as green grapes"])
+red_grapes = 3 * green_grapes + 7
+# 3. How many raspberries are there? (depends on 1, support: ["There are 5 less raspberries than green grapes"])
+raspberries = green_grapes - 5
+# 4. How many total pieces of fruit are there? (depends on 1, 2, and 3, support: "there are 102 pieces of fruit in the salad")
+total_fruit_eq = Eq(green_grapes + red_grapes + raspberries, 102)
+# 5. How many green grapes are in the salad based on this equation? (depends on 1 and 4, support: [])
+green_grapes_val = solve_it(total_fruit_eq, green_grapes)[green_grapes]
+# 6. How many red grapes are in the salad given the number of green grapes? (depends on 1, 2 and 5, support: "how many red grapes are in the salad?"])
+red_grapes_val = red_grapes.subs(green_grapes, green_grapes_val)
+# 7. Final Answer: how many red grapes are in the salad? (depends on 6, support: [])
+answer = red_grapes_val
+
+# Q: Denise will be 25 years old in two years. Her sister, Diane, is 4 years younger. In how many years will Diane be 25 years old?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How old will Denise be in two years? (independent, support: ["Denise will be 25 years old in two years"])
+age_denise_in_2y = 25
+# 2. How old is Denise now? (depends on 1, support: ["Denise will be 25 years old in two years"])
+age_denise_now = age_denise_in_2y - 2
+# 3. How old is Diane now? (depends on 2, support: ["Diane, is 4 years younger"])
+age_diane_now = age_denise_now - 4
+# 4. In how many years will Diane be 25 years old? (depends on 3, support: [])
+years_until_diane_25 = 25 - age_diane_now
+# 5. Final Answer: In how many years will Diane be 25 years old? (depends on 4, support: [])
+answer = years_until_diane_25
+
+# Q: There were 90 people at the summer picnic. There were 50 soda cans, 50 plastic bottles of sparkling water, and 50 glass bottles of juice. One-half of the guests drank soda, one-third of the guests drank sparkling water, and four-fifths of the juices were consumed. How many recyclable cans and bottles were collected?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many people were at the summer picnic? (independent, support: ["There were 90 people"])
+people = 90
+# 2. How many soda cans were there? (independent, support: ["There were 50 soda cans"])
+soda_cans = 50
+# 3. How many plastic bottles of sparkling water were there? (independent, support: ["50 plastic bottles of sparkling water"])
+sparkling_water_bottles = 50
+# 4. How many glass bottles of juice were there? (independent, support: ["50 glass bottles of juice"])
+juice_bottles = 50
+# 5. How many guests drank soda? (depends on 1, support: ["One-half of the guests drank soda"])
+soda_consumed = people * 1/2
+# 6. How many guests drank sparkling water? (depends on 1, support: ["one-third of the guests drank sparkling water"])
+sparkling_water_consumed = people * 1/3
+# 7. How many juices were consumed? (depends on 4, support: ["four-fifths of the juices were consumed"])
+juices_consumed = juice_bottles * 4/5
+# 8. How many recyclable cans and bottles were collected? (depends on 5, 6, and 7, support: [])
+cans_and_bottles_collected = soda_consumed + sparkling_water_consumed + juices_consumed
+# 9. Final Answer: How many recyclable cans and bottles were collected? (depends on 8, support: [])
+answer = cans_and_bottles_collected
+
+# Q: Mark has an egg farm. His farm supplies one store with 5 dozen eggs and another store with 30 eggs each day. How many eggs does he supply these two stores in a week?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many items are in one dozen? (independent, support: ["External knowledge: there are 12 items in a dozen"]
+n_in_dozen = 12
+# 2. How many eggs does Mark supply to one store each day? (depends on 1, support: ["supplies one store with 5 dozen eggs"])
+eggs_one_store_each_day = 5 * n_in_dozen
+# 3. How many eggs does Mark supply to another store each day? (independent, support: ["another store with 30 eggs each day"])
+eggs_another_store_each_day = 30
+# 4. How many days are there in a week? (independent, support: ["External knowledge: there are seven days in a week"])
+days_in_week = 7
+# 5. How many eggs does Mark supply these two stores in a week? (depends on 2, 3, and 4, support: [])
+eggs_week = 0
+for i in range(days_in_week):
+    eggs_week += eggs_one_store_each_day + eggs_another_store_each_day
+# 6. Final Answer: How many eggs does he supply these two stores in a week? (depends on 5, support: [])
+answer = eggs_week
+
+# Q: Rebecca makes her own earrings out of buttons, magnets, and gemstones. For every earring, she uses two magnets, half as many buttons as magnets, and three times as many gemstones as buttons. If Rebecca wants to make 4 sets of earrings, how many gemstones will she need?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many magnets does Rebecca need for one earring? (independent, support: ["For every earring, she uses two magnets"])
+magnets_per_earring = 2
+# 2. How many earrings are in a set? (independent, support: ["External knowledge: there are two earrings in a set, one per ear"])
+earrings_per_set = 2
+# 3. How many magnets does Rebecca need for one set of earrings? (depends on 1 and 2, support: [])
+magnets_per_set = magnets_per_earring * earrings_per_set
+# 4. How many buttons does Rebecca need for one set of earrings? (depends on 3, support: ["half as many buttons as magnets"])
+buttons_per_set = magnets_per_set * 1/2
+# 5. How many gemstones does Rebecca need for one set of earrings? (depends on 4, support: ["three times as many gemstones as buttons"])
+gemstones_per_set = buttons_per_set * 3
+# 6. How many gemstones does Rebecca need for 4 sets of earrings? (depends on 5, support: ["Rebecca wants to make 4 sets of earrings"])
+gemstones_4_sets = gemstones_per_set * 4
+# 7. Final Answer: If Rebecca wants to make 4 sets of earrings, how many gemstones will she need? (depends on 6, support: [])
+answer = gemstones_4_sets

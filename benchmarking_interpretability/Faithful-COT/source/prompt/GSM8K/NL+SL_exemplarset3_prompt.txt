@@ -1,0 +1,129 @@
+# Q: Pablo made 4 stacks of toy blocks. The first stack was 5 blocks tall. The second stack was 2 blocks taller than the first. The third stack was 5 blocks shorter than the second stack, and the last stack was 5 blocks taller than the third stack. How many toy blocks did Pablo use in all?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many blocks are in the first stack? (independent, support: ["The first stack was 5 blocks tall"])
+first_stack_blocks = 5
+# 2. How many blocks are in the second stack? (depends on 1, support: ["The second stack was 2 blocks taller than the first"])
+second_stack_blocks = first_stack_blocks + 2
+# 3. How many blocks are in the third stack? (depends on 2, support: ["The third stack was 5 blocks shorter than the second stack"])
+third_stack_blocks = second_stack_blocks - 5
+# 4. How many blocks are in the last stack? (depends on 3, support: ["the last stack was 5 blocks taller than the third stack"])
+last_stack_blocks = third_stack_blocks + 5
+# 5. How many blocks did Pablo use in all? (depends on 4, support: [])
+total_blocks = first_stack_blocks + second_stack_blocks + third_stack_blocks + last_stack_blocks
+# 6. Final Answer: How many blocks did Pablo use in all? (depends on 5, support: [])
+answer = total_blocks
+
+# Q: Rebecca makes her own earrings out of buttons, magnets, and gemstones. For every earring, she uses two magnets, half as many buttons as magnets, and three times as many gemstones as buttons. If Rebecca wants to make 4 sets of earrings, how many gemstones will she need?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many magnets does Rebecca need for one earring? (independent, support: ["For every earring, she uses two magnets"])
+magnets_per_earring = 2
+# 2. How many earrings are in a set? (independent, support: ["External knowledge: there are two earrings in a set, one per ear"])
+earrings_per_set = 2
+# 3. How many magnets does Rebecca need for one set of earrings? (depends on 1 and 2, support: [])
+magnets_per_set = magnets_per_earring * earrings_per_set
+# 4. How many buttons does Rebecca need for one set of earrings? (depends on 3, support: ["half as many buttons as magnets"])
+buttons_per_set = magnets_per_set * 1/2
+# 5. How many gemstones does Rebecca need for one set of earrings? (depends on 4, support: ["three times as many gemstones as buttons"])
+gemstones_per_set = buttons_per_set * 3
+# 6. How many gemstones does Rebecca need for 4 sets of earrings? (depends on 5, support: ["Rebecca wants to make 4 sets of earrings"])
+gemstones_4_sets = gemstones_per_set * 4
+# 7. Final Answer: If Rebecca wants to make 4 sets of earrings, how many gemstones will she need? (depends on 6, support: [])
+answer = gemstones_4_sets
+
+# Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many trees are there in the beginning? (independent, support: ["There are 15 trees"])
+trees_begin = 15
+# 2. How many trees are there in the end? (independent, support: ["there will be 21 trees"])
+trees_end = 21
+# 3. How many trees did the grove workers plant today? (depends on 1 and 2, support: [])
+trees_today = trees_end - trees_begin
+# 4. Final Answer: How many trees did the grove workers plant today? (depends on 3, support: [])
+answer = trees_today
+
+# Q: Danny has 3 bottles of soda. He drinks 90% of one bottle and gives 70% of the other two bottles to his friends. How much soda does Danny have left, expressed as a percentage of a bottle?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How much of one bottle did Danny drink? (independent, support: ["He drinks 90% of one bottle"])
+fraction_bottle_drink = 0.9
+# 2. How much of the other two bottles did Danny give to his friends? (independent, support: ["gives 70% of the other two bottles to his friends"])
+fraction_bottle_give = 0.7
+# 3. How much soda is left in the bottle Danny drank from? (depends on 1, support: [])
+fraction_bottle_drink_left = 1 - fraction_bottle_drink
+# 4. How much soda is left in the two bottles Danny gave his friends? (depends on 2, support: [])
+fraction_bottle_give_left = (1 - fraction_bottle_give) * 2
+# 5. How much soda does Danny have left in total? (depends on 3 and 4, support: [])
+fraction_soda_left = fraction_bottle_drink_left + fraction_bottle_give_left
+# 6. How much soda does Danny have left in total, expressed as a percentage of a bottle? (depends on 5, support: ["External knowledge: fraction multiplied by 100 is a percent"])
+percent_soda_left = fraction_soda_left * 100
+# 7. Final Answer: How much soda does Danny have left, expressed as a percentage of a bottle? (depends on 6, support: [])
+answer = percent_soda_left
+
+# Q: There were 90 people at the summer picnic. There were 50 soda cans, 50 plastic bottles of sparkling water, and 50 glass bottles of juice. One-half of the guests drank soda, one-third of the guests drank sparkling water, and four-fifths of the juices were consumed. How many recyclable cans and bottles were collected?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many people were at the summer picnic? (independent, support: ["There were 90 people"])
+people = 90
+# 2. How many soda cans were there? (independent, support: ["There were 50 soda cans"])
+soda_cans = 50
+# 3. How many plastic bottles of sparkling water were there? (independent, support: ["50 plastic bottles of sparkling water"])
+sparkling_water_bottles = 50
+# 4. How many glass bottles of juice were there? (independent, support: ["50 glass bottles of juice"])
+juice_bottles = 50
+# 5. How many guests drank soda? (depends on 1, support: ["One-half of the guests drank soda"])
+soda_consumed = people * 1/2
+# 6. How many guests drank sparkling water? (depends on 1, support: ["one-third of the guests drank sparkling water"])
+sparkling_water_consumed = people * 1/3
+# 7. How many juices were consumed? (depends on 4, support: ["four-fifths of the juices were consumed"])
+juices_consumed = juice_bottles * 4/5
+# 8. How many recyclable cans and bottles were collected? (depends on 5, 6, and 7, support: [])
+cans_and_bottles_collected = soda_consumed + sparkling_water_consumed + juices_consumed
+# 9. Final Answer: How many recyclable cans and bottles were collected? (depends on 8, support: [])
+answer = cans_and_bottles_collected
+
+# Q: There are 48 passengers on the bus. Two-thirds of the passengers are women and the rest are men. If one-eighth of the men are standing, how many men are seated?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many passengers are on the bus? (independent, support: ["There are 48 passengers on the bus"])
+total_passengers = 48
+# 2. How many passengers are women? (depends on 1, support: ["Two-thirds of the passengers are women"])
+women_passengers = total_passengers * (2 / 3)
+# 3. How many passengers are men? (depends on 1 and 2, support: ["the rest are men"])
+men_passengers = total_passengers - women_passengers
+# 4. How many men are standing? (depends on 3, support: ["one-eighth of the men are standing"])
+standing_men_passengers = men_passengers * (1/ 8)
+# 5. How many men are seated? (depends on 3 and 4, support: [])
+seated_men_passengers = men_passengers - standing_men_passengers
+# 6. Final Answer: How many men are seated? (depends on 5, support: [])
+answer = seated_men_passengers
+
+# Q: Carly had 42 lollipops to share with her friends. Half of the lollipops were cherry, and the rest were equal amounts of watermelon, sour apple, and grape. How many lollipops were grape?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many total lollipops were there? (independent, support: ["Carly had 42 lollipops"])
+total_lollipops = 42
+# 2. How many lollipops were cherry? (depends on 1, support: ["Half of the lollipops were cherry"])
+cherry_lollipops = total_lollipops * (1 / 2)
+# 3. How many lollipops were not cherry? (depends on 1 and 2, support: [])
+not_cherry_lollipops = total_lollipops - cherry_lollipops
+# 4. How many lollipops were grape? (depends on 3, support: ["the rest were equal amounts of watermelon, sour apple, and grape"])
+grape_lollipops = not_cherry_lollipops * (1 / 3)
+# 5. Final Answer: How many lollipops were grape? (depends on 4, support: [])
+answer = grape_lollipops
+
+# Q: There are ten more newborn elephants than baby hippos. If an entire herd starts with 20 elephants and 35 hippos, and the female hippos, whose number is 5/7 of the total number of hippos, give birth to 5 new baby hippos each, find the number of animals that are there altogether?
+# To answer this question, write a Python program to answer the following subquestions:
+# 1. How many hippos start in the herd? (independent, support: ["35 hippos"])
+initial_hippos = 35
+# 2. How many female hippos start in the herd? (depends on 1, support: ["the female hippos, whose number is 5/7 of the total number of hippos"])
+initial_female_hippos = initial_hippos * (5 / 7)
+# 3. How many hippos does each female hippo give birth to? (independent, support: ["give birth to 5 new baby hippos each"])
+hippos_born_per_female_hippo = 5
+# 4. How many baby hippos will there be? (depends on 2 and 3, support: [])
+baby_hippos = initial_female_hippos * hippos_born_per_female_hippo
+# 5. What is the final population of hippos? (depends on 1 and 4, support: [])
+final_hippos = initial_hippos + baby_hippos
+# 6. How many baby elephants are there? (depends on 4, support: ["There are ten more newborn elephants than baby hippos"])
+baby_elephants = baby_hippos + 10
+# 7. What is the final population of elephants? (depends on 6, support: [])
+final_elephants = 20 + baby_elephants
+# 8. How many animals are there together in the herd? (depends on 5 and 6, support: [])
+total_animals = final_hippos + final_elephants
+# 9. Final Answer: How many animals are there together in the herd? (depends on 8, support: [])
+answer = total_animals

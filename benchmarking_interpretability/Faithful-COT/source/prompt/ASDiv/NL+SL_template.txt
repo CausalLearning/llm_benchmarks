@@ -1,0 +1,2 @@
+# Q: [QUESTION]
+# To answer this question, write a Python program to answer the following subquestions:

@@ -1,0 +1,208 @@
+# Q: Yesterday was April 30, 2021. What is the date tomorrow in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+# 1. What is the date yesterday? (independent, support: ["Yesterday was April 30, 2021"])
+date_yesterday = date(2021,4,30)
+# 2. What is the date today? (depends on 1, support: ["Yesterday was April 30, 2021"])
+date_today = date_yesterday + relativedelta(days=1)
+# 3. What is the date tomorrow? (depends on 2, support: [])
+date_tomorrow = date_today + relativedelta(days=1)
+# 4. Final Answer: What is the date tomorrow in MM/DD/YYYY? (depends on 3, support: [])
+answer = date_tomorrow.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: Mother's Day is celebrated on the second Sunday in May. Tomorrow is the Mother's Day of 2018. What is the date a week ago?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+# 1. What is the date of the first Sunday in May? (independent, support: [])
+date_1st_sun_may = date(2018,5,1)
+while date_1st_sun_may.weekday() != calendar.SUNDAY:
+    date_1st_sun_may += relativedelta(days=1)
+# 2. How many days are there in a week? (independent, support: ["External knowledge: There are 7 days in a week."])
+n_days_of_a_week = 7
+# 3. What is the date of the second Sunday in May? (depends on 1 and 2, support: [])
+date_2nd_sun_may = date_1st_sun_may + relativedelta(days=n_days_of_a_week)
+# 4. What is the date today? (depends on 3, support: ["Tomorrow is the Mother's Day of 2018"])
+date_today = date_2nd_sun_may - relativedelta(days=1)
+# 5. What is the date a week ago? (depends on 4, support: [])
+date_a_week_ago = date_today - relativedelta(days=n_days_of_a_week)
+# 6. Final Answer: What is the date a week ago in MM/DD/YYYY? (depends on 5, support: [])
+answer = date_a_week_ago.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date yesterday in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+# 1. Is 2001 a leap year? (independent, support: [])
+is_leap_2001 = calendar.isleap(2001)
+# 2. What is Jane's date of birth? (depends on 1, support: ["Jane was born on the last day of Feburary in 2001"])
+if is_leap_2001:
+    date_jane_birth = date(2001,2,29)
+else:
+    date_jane_birth = date(2001,2,28)
+# 3. What date is today? (depends on 2, support: ["Today is her 16-year-old birthday"])
+date_today = date_jane_birth + relativedelta(years=16)
+# 4. What is the date yesterday? (depends on 3, support: [])
+date_yesterday = date_today - relativedelta(days=1)
+# 5. Final Answer: What is the date yesterday in MM/DD/YYYY? (depends on 4, support: [])
+answer = date_yesterday.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date a month ago in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+# 1. What is the date of the first Thursday of November? (independent, support: [])
+date_1st_thu = date(2001,11,1)
+while date_1st_thu.weekday() != calendar.THURSDAY:
+    date_1st_thu += relativedelta(days=1)
+# 2. How many days are there in a week? (independent, support: ["External knowledge: There are 7 days in a week."])
+n_days_of_a_week = 7
+# 3. What is the date today? (depends on 1 and 2, support: ["Today is the US Thanksgiving of 2001", "Thanksgiving is on the fourth Thursday of November"])
+days_from_1st_to_4th_thu = (4-1) * n_days_of_a_week
+date_today = date_1st_thu + relativedelta(days=days_from_1st_to_4th_thu)
+# 5. What is the date a month ago? (depends on 4, support: [])
+date_a_month_ago = date_today - relativedelta(months=1)
+# 6. Final Answer: What is the date a month ago in MM/DD/YYYY? (depends on 5, support: [])
+answer = date_a_month_ago.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: John booked a flight that was scheduled for 6:30 pm on 08/29/2005. However, it was delayed by 12h due to weather. After the takeoff, the duration of the flight was 5h. What is the date of John's arrival in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+# 1. What is the scheduled date and time of John's flight? (independent, support: ["John booked a flight that was scheduled for 6:30 pm on 08/29/2005"])
+datetime_flight_scheduled = datetime(2005,8,29,hour=18,minute=30)
+# 2. What is the actual date and time of John's flight? (depends on 1, support: ["However, it was delayed by 12h due to weather"])
+datetime_flight_actual = datetime_flight_scheduled + relativedelta(hours=12)
+# 3. What is the duration of the flight? (independent, support: ["After the takeoff, the duration of the flight was 5h"])
+duration_flight = relativedelta(hours=5)
+# 4. What is the date and time of John's arrival? (depends on 2 and 3, support: [])
+datetime_arrival = datetime_flight_actual + duration_flight
+# 5. Final Answer: What is the date of John's arrival in MM/DD/YYYY? (depends on 4, support: [])
+answer = datetime_arrival.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: Yesterday was the second Thursday of May 2019. What is the date tomorrow in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+# 1. What is the date of the first Thursday of May 2019? (independent, support: [])
+date_1st_thu_may_2019 = date(2019,5,1)
+while date_1st_thu_may_2019.weekday() != calendar.THURSDAY:
+    date_1st_thu_may_2019 += relativedelta(days=1)
+# 2. How many days are there in a week? (independent, support: ["External knowledge: There are 7 days in a week."])
+n_days_of_a_week = 7
+# 3. What is the date of the second Thursday of May 2019? (depends on 1 and 2, support: [])
+date_2nd_thu_may_2019 = date_1st_thu_may_2019 + relativedelta(days=n_days_of_a_week)
+# 4. What is the date today? (depends on 3, support: ["Yesterday was the second Thursday of May 2019"])
+date_today = date_2nd_thu_may_2019 + relativedelta(days=1)
+# 5. What is the date tomorrow? (depends on 4, support: [])
+date_tomorrow = date_today + relativedelta(days=1)
+# 6. Final Answer: What is the date tomorrow in MM/DD/YYYY? (depends on 5, support: [])
+answer = date_tomorrow.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+# 1. What is the date and time of the first day of 2015? (independent, support: [])
+datetime_first_day_2015 = datetime(2015,1,1,hour=0,minute=0)
+# 2. What is the date today? (depends on 1, support: ["2015 is coming in 36 hours"])
+date_today = datetime_first_day_2015 - relativedelta(hours=36)
+# 3. What is the date one week from today? (depends on 2, support: [])
+date_1_week_from_today = date_today + relativedelta(weeks=1)
+# 4. Final Answer: What is the date one week from today in MM/DD/YYYY? (depends on 3, support: [])
+answer = date_1_week_from_today.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one year ago from today in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+# 1. What is the date of the first day of 2019? (independent, support: [])
+date_first_day_2019 = date(2019,1,1)
+# 2. What are the days of the week? (independent, support: ["External knowledge: Days of the week are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday."])
+days_of_a_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+# 3. How many days are there from Tuesday to the next Monday? (depends on 2, support: [])
+days_from_tue_to_nextmon = days_of_a_week.index("Monday") + len(days_of_a_week) - days_of_a_week.index("Tuesday")
+# 4. How many days are there from the first day of 2019 to today? (depends on 3, support: ["The first day of 2019 is a Tuesday, and today is the first Monday of 2019"])
+days_from_first_day_2019_to_today = days_from_tue_to_nextmon
+# 5. What is the date today in MM/DD/YYYY? (depends on 1 and 4, support: ["The first day of 2019 is a Tuesday, and today is the first Monday of 2019"])
+date_today = date_first_day_2019 + relativedelta(days=days_from_first_day_2019_to_today)
+# 6. What is the date one year ago from today? (depends on 5, support: [])
+date_1year_ago = date_today - relativedelta(years=1)
+# 7. Final Answer: What is the date one year ago from today in MM/DD/YYYY? (depends on 6, support: [])
+answer = date_1year_ago.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: Mike started his job on the first Monday of January 2018. After two years, he left the company. What is the date one week after his resignation in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+# 1. What is the date of the first Monday of January 2018? (independent, support: [])
+date_1st_mon_jan_2018 = date(2018,1,1)
+while date_1st_mon_jan_2018.weekday() != calendar.MONDAY:
+    date_1st_mon_jan_2018 += relativedelta(days=1)
+# 2. How many days are there in a week? (independent, support: ["External knowledge: There are 7 days in a week."])
+n_days_of_a_week = 7
+# 3. What is the date when he left the company? (depends on 1 and 2, support: ["After two years, he left the company"])
+date_left = date_1st_mon_jan_2018 + relativedelta(years=2)
+# 4. What is the date one week after his resignation? (depends on 3, support: [])
+date_1week_after_resignation = date_left + relativedelta(days=n_days_of_a_week)
+# 5. Final Answer: What is the date one week after his resignation in MM/DD/YYYY? (depends on 4, support: [])
+answer = date_1week_after_resignation.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE
+
+# Q: Today is the 100th day of 2019. What is the date one year ago in MM/DD/YYYY?
+# To answer this question, we write a program to answer the following subquestions:
+# import relevant packages
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+# 1. What is the date of the first day of 2019? (independent, support: [])
+date_first_day_2019 = date(2019,1,1)
+# 2. What is the date today? (depends on 1, support: ["Today is the 100th day of 2019"])
+date_today = date_first_day_2019 + relativedelta(days=100-1)
+# 3. What is the date one year ago? (depends on 2, support: [])
+date_1year_ago = date_today - relativedelta(years=1)
+# 4. Final Answer: What is the date one year ago in MM/DD/YYYY? (depends on 3, support: [])
+answer = date_1year_ago.strftime("%m/%d/%Y")
+# print the answer
+print(answer)
+#DONE

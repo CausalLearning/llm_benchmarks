@@ -1,0 +1,71 @@
+Q: A person is traveling at 20 km/hr and reached his destiny in 2.5 hr then find the distance?
+Answer Choices:
+(a) 53 km
+(b) 55 km
+(c) 52 km
+(d) 60 km
+(e) 50 km
+A: The answer is (e).
+
+Q: John found that the average of 15 numbers is 40. If 10 is added to each number then the mean of the numbers is?
+Answer Choices:
+(a) 50
+(b) 45
+(c) 65
+(d) 78
+(e) 64
+A: The answer is (a).
+
+Q: If a / b = 3/4 and 8a + 5b = 22,then find the value of a.
+Answer Choices:
+(a) 1/2
+(b) 3/2
+(c) 5/2
+(d) 4/2
+(e) 7/2
+A: The answer is (b).
+
+Q: How many keystrokes are needed to type the numbers from 1 to 500?
+Answer Choices:
+(a) 1156
+(b) 1392
+(c) 1480
+(d) 1562
+(e) 1788
+A: The answer is (b).
+
+Q: Two friends plan to walk along a 43-km trail, starting at opposite ends of the trail at the same time. If Friend P's rate is 15% faster than Friend Q's, how many kilometers will Friend P have walked when they pass each other?
+Answer Choices:
+(a) 21
+(b) 21.5
+(c) 22
+(d) 22.5
+(e) 23
+A: The answer is (e).
+
+Q: The entrance fee for a fair is $5 for persons under the age of 18, and 20% more for persons older. Each ride at the fair costs $0.50. If Joe goes with her 6 years old twin brothers, and they each took 3 rides in total. How much money does Joe end up spending at the fair?
+Answer Choices:
+(a) 16
+(b) 20.5
+(c) 17.5
+(d) 20
+(e) 4.5
+A: The answer is (b).
+
+Q: If Tim had lunch at $50 and he gave 20% tip, how much did he spend?
+Answer Choices:
+(a) $60.00
+(b) $35.42
+(c) $60.60
+(d) $21.56
+(e) $78.45
+A: The answer is (a).
+
+Q: A cheese factory sells its cheese in rectangular blocks. A normal block has a volume of 8 cubic feet. If a small block has half the width, half the depth, and half the length of a normal block, what is the volume of cheese in a small block in cubic feet?
+Answer Choices:
+(a) 1
+(b) 5
+(c) 4
+(d) 6
+(e) 2
+A: The answer is (a).

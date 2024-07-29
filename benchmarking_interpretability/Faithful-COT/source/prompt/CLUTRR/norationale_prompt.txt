@@ -1,0 +1,89 @@
+# Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+# Question: How is [Jason] related to [Myrna]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Jason] related to [Guillermina]?
+relation(Jason, Guillermina) = grandfather
+# 2. How is [Guillermina] related to [Myrna]?
+relation(Guillermina, Myrna) = daughter
+# 3. Final answer: How is [Jason] related to [Myrna]?
+relation(Jason, Myrna) = relation(Jason, Guillermina) @ relation(Guillermina, Myrna)
+
+# Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+# Question: How is [Vincent] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Vincent] related to [Dorothy]?
+relation(Vincent, Dorothy) = son
+# 2. How is [Dorothy] related to [Gabrielle]?
+relation(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Vincent] related to [Gabrielle]?
+relation(Vincent, Gabrielle) = relation(Vincent, Dorothy) @ relation(Dorothy, Gabrielle)
+
+# Context: [Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping.
+# Question: How is [Michelle] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Michelle] related to [Dorothy]?
+relation(Michelle, Dorothy) = daughter
+# 2. How is [Dorothy] related to [Gabrielle]?
+relation(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Michelle] related to [Gabrielle]?
+relation(Michelle, Gabrielle) = relation(Michelle, Dorothy) @ relation(Dorothy, Gabrielle)
+
+# Context: [Teresa] and her brother [Ellis] were having a wonderful time at Disneyland. [Ellis] asked his grandmother, [Molly], to read him a bedtime story. [Molly] read him Hansel & Gretel, which the boy always loved. [Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.
+# Question: How is [Molly] related to [Sandra]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Ellis]?
+relation(Molly, Ellis) = grandmother
+# 2. How is [Ellis] related to [Teresa]?
+relation(Ellis, Teresa) = brother
+# 3. How is [Teresa] related to [Sandra]?
+relation(Teresa, Sandra) = daughter
+# 4. Final answer: How is [Molly] related to [Sandra]?
+relation(Molly, Sandra) = relation(Molly, Ellis) @ relation(Ellis, Teresa) @ relation(Teresa, Sandra)
+
+# Context: [Carlos] and his sister, [Annie], went shopping. [Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no. [Carlos] is [Clarence]'s Brother.
+# Question: How is [Valerie] related to [Clarence]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Valerie] related to [Annie]?
+relation(Valerie, Annie) = mother
+# 2. How is [Annie] related to [Carlos]?
+relation(Annie, Carlos) = sister
+# 3. How is [Carlos] related to [Clarence]?
+relation(Carlos, Clarence) = brother
+# 4. Final answer: How is [Valerie] related to [Clarence]?
+relation(Valerie, Clarence) = relation(Valerie, Annie) @ relation(Annie, Carlos) @ relation(Carlos, Clarence)
+
+# Context: [James] is happy that his daughter is doing so well. Her name is [Enedina]. [James] and his daughter [Teresa] spent Father's Day together. [Teresa] took her dad out to a sports bar, and they had a great time watching football and drinking beer there. [Enedina] went to the opera with her grandfather [Stanley].
+# Question: How is [Teresa] related to [Stanley]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Teresa] related to [James]?
+relation(Teresa, James) = daughter
+# 2. How is [James] related to [Enedina]?
+relation(James, Enedina) = father
+# 3. How is [Enedina] related to [Stanley]?
+relation(Enedina, Stanley) = granddaughter
+# 4. Final answer: How is [Teresa] related to [Stanley]?
+relation(Teresa, Stanley) = relation(Teresa, James) @ relation(James, Enedina) @ relation(Enedina, Stanley)
+
+# Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+# Question: How is [Alan] related to [Venita]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Alan] related to [Elizabeth]?
+relation(Alan, Elizabeth) = father
+# 2. How is [Elizabeth] related to [Carlos]?
+relation(Elizabeth, Carlos) = sister
+# 3. How is [Carlos] related to [Venita]?
+relation(Carlos, Venita) = husband
+# 4. Final answer: How is [Alan] related to [Venita]?
+relation(Alan, Venita) = relation(Alan, Elizabeth) @ relation(Elizabeth, Carlos) @ relation(Carlos, Venita)
+
+# Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+# Question: How is [Annie] related to [James]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Annie] related to [Alan]?
+relation(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Elliott]?
+relation(Alan, Elliott) = brother
+# 3. How is [Elliott] related to [James]?
+relation(Elliott, James) = brother
+# 4. Final answer: How is [Annie] related to [James]?
+relation(Annie, James) = relation(Annie, Alan) @ relation(Alan, Elliott) @ relation(Elliott, James)

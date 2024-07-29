@@ -1,0 +1,123 @@
+Q: A person is traveling at 20 km/hr and reached his destiny in 2.5 hr then find the distance?
+Answer Choices:
+(a) 53 km
+(b) 55 km
+(c) 52 km
+(d) 60 km
+(e) 50 km
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How fast does the person travel?
+The person travels at 20 km/hr.
+Q2. How long did the person travel?
+The person traveled for 2.5 hours.
+Final Answer: What is the distance that the person traveled?
+The person traveled 20 km/hr * 2.5 hrs = 50 km. So the answer is (e).
+
+Q: John found that the average of 15 numbers is 40. If 10 is added to each number then the mean of the numbers is?
+Answer Choices:
+(a) 50
+(b) 45
+(c) 65
+(d) 78
+(e) 64
+A: To answer the above question, we need to answer the following subquestions:
+Q1. If 10 is added to each number, what will the mean of the numbers increases by?
+The mean of the numbers will increase by 10.
+Final Answer: What is the new mean of the numbers?
+The new mean is 40 + 10 = 50. So the answer is (a).
+
+Q: If a / b = 3/4 and 8a + 5b = 22,then find the value of a.
+Answer Choices:
+(a) 1/2
+(b) 3/2
+(c) 5/2
+(d) 4/2
+(e) 7/2
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What's b in terms of a?
+Since a / b = 3/4, b = 4a / 3.
+Q2. What's the result of substituting 4a / 3 for b in the second equation?
+8a + 5(4a / 3) = 22.
+Q3. What does the above equation simplify to?
+This simplifies to 8a + 20a / 3 = 22, which means 44a / 3 = 22.
+Final Answer: What's the value of a?
+a is equal to 3/2. So the answer is (b).
+
+Q: How many keystrokes are needed to type the numbers from 1 to 500?
+Answer Choices:
+(a) 1156
+(b) 1392
+(c) 1480
+(d) 1562
+(e) 1788
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many keystrokes are needed to type the numbers from 1 to 9?
+There are 9 one-digit numbers from 1 to 9. Each number requires one keystroke. So 9 keystrokes are needed.
+Q2. How many keystrokes are needed to type the numbers from 10 to 99?
+There are 90 two-digit numbers from 10 to 99. Each number requires two keystrokes. So 90*2=180 keystrokes are needed.
+Q3. How many keystrokes are needed to type the numbers from 100 to 500?
+There are 401 three-digit numbers from 100 to 500. Each number requires three keystrokes. So 401*3=1203 keystrokes are needed.
+Final Answer: How many keystrokes are needed to type the numbers from 1 to 500?
+9 + 180 + 1203 = 1392. So the answer is (b).
+
+Q: Two friends plan to walk along a 43-km trail, starting at opposite ends of the trail at the same time. If Friend P's rate is 15% faster than Friend Q's, how many kilometers will Friend P have walked when they pass each other?
+Answer Choices:
+(a) 21
+(b) 21.5
+(c) 22
+(d) 22.5
+(e) 23
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What's the rate of Friend Q?
+Let's say Friend Q's rate is x km/hr.
+Q2. What's the rate of Friend P?
+Friend P's rate is 1.15x km/hr.
+Q3. How many kilometers do they walk together before they pass each other?
+They walk 43 km together before they pass each other. So x + 1.15x = 43.
+Final Answer: How many kilometers will Friend P have walked when they pass each other?
+Solving x + 1.15x = 43, we get x = 20. So Friend P will have walked 1.15*20 = 23 km. So the answer is (e).
+
+Q: The entrance fee for a fair is $5 for persons under the age of 18, and 20% more for persons older. Each ride at the fair costs $0.50. If Joe goes with her 6 years old twin brothers, and they each took 3 rides in total. How much money does Joe end up spending at the fair?
+Answer Choices:
+(a) 16
+(b) 20.5
+(c) 17.5
+(d) 20
+(e) 4.5
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What's the total entrance fee?
+Total entrance fee is (2*5) + (1.20*5)= $16.
+Q2. What's the total cost of the rides?
+Total rides fee is (0.50*3)*3= $4.50.
+Final Answer: How much money does Joe end up spending at the fair?
+Total cost is 16+4.50= $20.50. So the answer is (b).
+
+Q: If Tim had lunch at $50 and he gave 20% tip, how much did he spend?
+Answer Choices:
+(a) $60.00
+(b) $35.42
+(c) $60.60
+(d) $21.56
+(e) $78.45
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What's the cost of the lunch?
+The cost of the lunch is $50.
+Q2. What's the tip?
+The tip is 20% of $50, which is $10.
+Final Answer: What's the total cost?
+The total cost is $50 + $10 = $60. So the answer is (a).
+
+Q: A cheese factory sells its cheese in rectangular blocks. A normal block has a volume of 8 cubic feet. If a small block has half the width, half the depth, and half the length of a normal block, what is the volume of cheese in a small block in cubic feet?
+Answer Choices:
+(a) 1
+(b) 5
+(c) 4
+(d) 6
+(e) 2
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What's the volume of a normal block?
+The volume of a normal block is 8 cubic feet.
+Q2. What's the volume of a small block?
+The volume of a small block is 1/2 * 1/2 * 1/2 = 1/8 of the volume of a normal block.
+Final Answer: What's the volume of cheese in a small block in cubic feet?
+The volume of cheese in a small block is 8*(1/8) = 1 cubic feet. So the answer is (a).

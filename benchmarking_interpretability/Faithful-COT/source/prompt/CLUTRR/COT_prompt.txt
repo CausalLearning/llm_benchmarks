@@ -1,0 +1,60 @@
+Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+Question: How is [Jason] related to [Myrna]?
+Answer:
+[Jason] is [Guillermina]'s grandfather.
+[Guillermina] is [Myrna]'s daughter.
+Final Answer: [Jason] is [Myrna]'s father.
+
+Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+Question: How is [Vincent] related to [Gabrielle]?
+Answer:
+[Vincent] is [Dorothy]'s son.
+[Dorothy] is [Gabrielle]'s daughter.
+Final Answer: [Vincent] is [Gabrielle]'s grandson.
+
+Context: [Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping.
+Question: How is [Michelle] related to [Gabrielle]?
+Answer:
+[Michelle] is [Dorothy]'s daughter.
+[Dorothy] is [Gabrielle]'s daughter.
+Final Answer: [Michelle] is [Gabrielle]'s granddaughter.
+
+Context: [Teresa] and her brother [Ellis] were having a wonderful time at Disneyland. [Ellis] asked his grandmother, [Molly], to read him a bedtime story. [Molly] read him Hansel & Gretel, which the boy always loved. [Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.
+Question: How is [Molly] related to [Sandra]?
+Answer:
+[Molly] is [Ellis]'s grandmother.
+[Ellis] is [Teresa]'s brother.
+[Teresa] is [Sandra]'s daughter.
+Final Answer: [Molly] is [Sandra]'s mother.
+
+Context: [Carlos] and his sister, [Annie], went shopping. [Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no. [Carlos] is [Clarence]'s Brother.
+Question: How is [Valerie] related to [Clarence]?
+Answer:
+[Valerie] is [Annie]'s mother.
+[Annie] is [Carlos]'s sister.
+[Carlos] is [Clarence]'s brother.
+Final Answer: [Valerie] is [Clarence]'s mother.
+
+Context: [James] is happy that his daughter is doing so well. Her name is [Enedina]. [James] and his daughter [Teresa] spent Father's Day together. [Teresa] took her dad out to a sports bar, and they had a great time watching football and drinking beer there. [Enedina] went to the opera with her grandfather [Stanley].
+Question: How is [Teresa] related to [Stanley]?
+Answer:
+[Teresa] is [James]'s daughter.
+[James] is [Enedina]'s father.
+[Enedina] is [Stanley]'s granddaughter.
+Final Answer: [Teresa] is [Stanley]'s granddaughter.
+
+Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+Question: How is [Alan] related to [Venita]?
+Answer:
+[Alan] is [Elizabeth]'s father.
+[Elizabeth] is [Carlos]'s sister.
+[Carlos] is [Venita]'s husband.
+Final Answer: [Alan] is [Venita]'s father-in-law.
+
+Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+Question: How is [Annie] related to [James]?
+Answer:
+[Annie] is [Alan]'s daughter.
+[Alan] is [Elliott]'s brother.
+[Elliott] is [James]'s brother.
+Final Answer: [Annie] is [James]'s niece.

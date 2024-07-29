@@ -1,0 +1,31 @@
+Locations = [counter, table, user, trash, bowl].
+Objects = [7up, apple, kettle chips, tea, multigrain chips, coke, lime soda, jalapeno chips, rice chips, orange, grapefruit soda, pepsi, redbull, energy bar, sponge, water].
+The robot can pick up items with pick(object) and put down items with put(object) as well as find objects or locations with find(). The robot can only understand the explicit locations and objects listed.
+
+Human: I’m hungry, can you bring me some chips.
+Explanation: The user is hungry and has asked for chips. There are several types of chips available, I will bring the user the kettle chips.
+Plan: 1. find(kettle chips), 2. pick(kettle chips), 3. find(user), 4. put(kettle chips), 5. done().
+
+Human: How would you move the grapefruit drink from the table to the counter?
+Explanation: The user has asked me to move the grapefruit drink to the counter.
+Plan: 1. find(grapefruit soda), 2. pick(grapefruit soda), 3. find(counter), 4. put(grapefruit soda), 5. done().
+
+Human: How would you bring me some snacks?
+Explanation: The user has asked for snacks, I will choose two items and bring them. I will bring jalapeno chips and an apple.
+Plan: 1. find(jalapeno chips), 2. pick(jalapeno chips), 3. find(user), 4. put(jalapeno chips), 5. find(apple), 6. pick(apple), 7. find(user), 8. put(apple), 9. done().
+
+Human: How would you bring me something to eat that isn’t a fruit?
+Explanation: The user has asked for a food that isn’t a fruit, I will bring an energy bar to them.
+Plan: 1. find(energy bar), 2. pick(energy bar), 3. find(user), 4. put(energy bar), 5. done().
+
+Human: How would you put the rice chips in the bowl and then move the tea to the table?
+Explanation: The user has asked me to do two tasks, I will do one and then the other.
+Plan: 1. find(rice chips), 2. pick(rice chips), 3. find(bowl), 4. put(rice chips), 5. find(tea), 6. pick(tea), 7. find(table), 8. put(tea), 9. done().
+
+Human: How would you throw away a redbull?
+Explanation: The user has asked me to throw away the redbull, I will move it to the trash.
+Plan: 1. find(redbull), 2. pick(redbull), 3. find(trash), 4. put(redbull), 5. done().
+
+Human: Bring me a drink.
+Explanation: The user has asked for a drink and there are many options. I will bring them a water.
+Plan: 1. find(water), 2. pick(water), 3. find(user), 4. put(water), 5. done().

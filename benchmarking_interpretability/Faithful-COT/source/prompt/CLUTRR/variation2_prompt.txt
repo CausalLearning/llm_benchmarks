@@ -1,0 +1,89 @@
+# Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+# Question: How is [Jason] related to [Myrna]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Jason] related to [Guillermina]? (independent, support: "[Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit.")
+rel(Jason, Guillermina) = grandfather
+# 2. How is [Guillermina] related to [Myrna]? (independent, support: "So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.")
+rel(Guillermina, Myrna) = daughter
+# 3. Final answer: How is [Jason] related to [Myrna]? (depends on 1, 2)
+rel(Jason, Myrna) = rel(Jason, Guillermina) @ rel(Guillermina, Myrna)
+
+# Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+# Question: How is [Vincent] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Vincent] related to [Dorothy]? (independent, support: "[Dorothy]'s son [Vincent] showed up shortly after.")
+rel(Vincent, Dorothy) = son
+# 2. How is [Dorothy] related to [Gabrielle]? (independent, support: "[Gabrielle] drove her daughter [Dorothy] to the hospital.")
+rel(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Vincent] related to [Gabrielle]? (depends on 1, 2)
+rel(Vincent, Gabrielle) = rel(Vincent, Dorothy) @ rel(Dorothy, Gabrielle)
+
+# Context: [Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping.
+# Question: How is [Michelle] related to [Gabrielle]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Michelle] related to [Dorothy]? (independent, support: "[Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping.")
+rel(Michelle, Dorothy) = daughter
+# 2. How is [Dorothy] related to [Gabrielle]? (independent, support: "[Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping.")
+rel(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Michelle] related to [Gabrielle]? (depends on 1, 2)
+rel(Michelle, Gabrielle) = rel(Michelle, Dorothy) @ rel(Dorothy, Gabrielle)
+
+# Context: [Teresa] and her brother [Ellis] were having a wonderful time at Disneyland. [Ellis] asked his grandmother, [Molly], to read him a bedtime story. [Molly] read him Hansel & Gretel, which the boy always loved. [Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.
+# Question: How is [Molly] related to [Sandra]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Molly] related to [Ellis]? (independent, support: "[Ellis] asked his grandmother, [Molly], to read him a bedtime story.")
+rel(Molly, Ellis) = grandmother
+# 2. How is [Ellis] related to [Teresa]? (independent, support: "[Teresa] and her brother [Ellis] were having a wonderful time at Disneyland.")
+rel(Ellis, Teresa) = brother
+# 3. How is [Teresa] related to [Sandra]? (independent, support: "[Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world.")
+rel(Teresa, Sandra) = daughter
+# 4. Final answer: How is [Molly] related to [Sandra]? (depends on 1, 2, 3)
+rel(Molly, Sandra) = rel(Molly, Ellis) @ rel(Ellis, Teresa) @ rel(Teresa, Sandra)
+
+# Context: [Carlos] and his sister, [Annie], went shopping. [Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no. [Carlos] is [Clarence]'s Brother.
+# Question: How is [Valerie] related to [Clarence]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Valerie] related to [Annie]? (independent, support: "[Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no.")
+rel(Valerie, Annie) = mother
+# 2. How is [Annie] related to [Carlos]? (independent, support: "[Carlos] and his sister, [Annie], went shopping.")
+rel(Annie, Carlos) = sister
+# 3. How is [Carlos] related to [Clarence]? (independent, support: "[Carlos] is [Clarence]'s Brother.")
+rel(Carlos, Clarence) = brother
+# 4. Final answer: How is [Valerie] related to [Clarence]? (depends on 1, 2, 3)
+rel(Valerie, Clarence) = rel(Valerie, Annie) @ rel(Annie, Carlos) @ rel(Carlos, Clarence)
+
+# Context: [James] is happy that his daughter is doing so well. Her name is [Enedina]. [James] and his daughter [Teresa] spent Father's Day together. [Teresa] took her dad out to a sports bar, and they had a great time watching football and drinking beer there. [Enedina] went to the opera with her grandfather [Stanley].
+# Question: How is [Teresa] related to [Stanley]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Teresa] related to [James]? (independent, support: "[James] and his daughter [Teresa] spent Father's Day together.")
+rel(Teresa, James) = daughter
+# 2. How is [James] related to [Enedina]? (independent, support: "[James] is happy that his daughter is doing so well. Her name is [Enedina].")
+rel(James, Enedina) = father
+# 3. How is [Enedina] related to [Stanley]? (independent, support: " [Enedina] went to the opera with her grandfather [Stanley].")
+rel(Enedina, Stanley) = granddaughter
+# 4. Final answer: How is [Teresa] related to [Stanley]? (depends on 1, 2, 3)
+rel(Teresa, Stanley) = rel(Teresa, James) @ rel(James, Enedina) @ rel(Enedina, Stanley)
+
+# Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+# Question: How is [Alan] related to [Venita]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Alan] related to [Elizabeth]? (independent, support: "[Elizabeth] 'father, [Alan], recently went back to school.")
+rel(Alan, Elizabeth) = father
+# 2. How is [Elizabeth] related to [Carlos]? (independent, support: "[Carlos] went to visit his sister [Elizabeth] to the hospital last week.")
+rel(Elizabeth, Carlos) = sister
+# 3. How is [Carlos] related to [Venita]? (independent, support: "[Carlos] and his wife [Venita] are going to be at the play.")
+rel(Carlos, Venita) = husband
+# 4. Final answer: How is [Alan] related to [Venita]? (depends on 1, 2, 3)
+rel(Alan, Venita) = rel(Alan, Elizabeth) @ rel(Elizabeth, Carlos) @ rel(Carlos, Venita)
+
+# Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+# Question: How is [Annie] related to [James]?
+# To answer this question, we write a program to answer the following subquestions:
+# 1. How is [Annie] related to [Alan]? (independent, support: "[Alan] loves his daughter [Annie].")
+rel(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Elliott]? (independent, support: "[Alan] love his brother [Elliott].")
+rel(Alan, Elliott) = brother
+# 3. How is [Elliott] related to [James]? (independent, support: "[Elliott] is excited to cheer on his brother [James] in the homecoming game tonight.")
+rel(Elliott, James) = brother
+# 4. Final answer: How is [Annie] related to [James]? (depends on 1, 2, 3)
+rel(Annie, James) = rel(Annie, Alan) @ rel(Alan, Elliott) @ rel(Elliott, James)

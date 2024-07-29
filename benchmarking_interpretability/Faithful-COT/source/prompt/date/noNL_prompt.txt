@@ -1,0 +1,110 @@
+# Q: Yesterday was April 30, 2021. What is the date tomorrow in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_yesterday = date(2021,4,30)
+date_today = date_yesterday + relativedelta(days=1)
+date_tomorrow = date_today + relativedelta(days=1)
+answer = date_tomorrow.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date today in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_yesterday = date(1929,12,31)
+date_today = date_yesterday + relativedelta(days=1)
+answer = date_today.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date 10 days ago in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_scheduled = date(1943,6,1)
+date_today = date_scheduled + relativedelta(days=1)
+date_10_days_ago = date_today - relativedelta(days=10)
+answer = date_10_days_ago.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: It was Sept. 1st, 2021 a week ago. What is the date tomorrow in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_1week_ago = date(2021,9,1)
+date_today = date_1week_ago + relativedelta(weeks=1)
+date_tomorrow = date_today + relativedelta(days=1)
+answer = date_tomorrow.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+datetime_first_day_2015 = datetime(2015,1,1,hour=0,minute=0)
+date_today = datetime_first_day_2015 - relativedelta(hours=36)
+date_1_week_from_today = date_today + relativedelta(weeks=1)
+answer = date_1_week_from_today.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date 24 hours later in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_today = date(2002,3,11)
+date_24hlater = date_today + relativedelta(hours=24)
+answer = date_24hlater.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date yesterday in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+is_leap_2001 = calendar.isleap(2001)
+if is_leap_2001:
+    date_jane_birth = date(2001,2,29)
+else:
+    date_jane_birth = date(2001,2,28)
+date_today = date_jane_birth + relativedelta(years=16)
+date_yesterday = date_today - relativedelta(days=1)
+answer = date_yesterday.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date one week ago from today in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_marry = date(1958,1,2)
+date_today = date_marry + relativedelta(years=5)
+date_1week_ago_from_today = date_today - relativedelta(days=7)
+answer = date_1week_ago_from_today.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date a month ago in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+import calendar
+date_1st_thu = date(2001,11,1)
+while date_1st_thu.weekday() != calendar.THURSDAY:
+    date_1st_thu += relativedelta(days=1)
+n_days_of_a_week = 7
+days_from_1st_to_4th_thu = (4-1) * n_days_of_a_week
+date_today = date_1st_thu + relativedelta(days=days_from_1st_to_4th_thu)
+date_a_month_ago = date_today - relativedelta(months=1)
+answer = date_a_month_ago.strftime("%m/%d/%Y")
+print(answer)
+#DONE
+
+# Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one year ago from today in MM/DD/YYYY?
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_first_day_2019 = date(2019,1,1)
+days_of_a_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+days_from_tue_to_nextmon = days_of_a_week.index("Monday") + len(days_of_a_week) - days_of_a_week.index("Tuesday")
+days_from_first_day_2019_to_today = days_from_tue_to_nextmon
+date_today = date_first_day_2019 + relativedelta(days=days_from_first_day_2019_to_today)
+date_1year_ago = date_today - relativedelta(years=1)
+answer = date_1year_ago.strftime("%m/%d/%Y")
+print(answer)
+#DONE

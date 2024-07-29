@@ -1,0 +1,63 @@
+Locations = [counter, table, user, trash, bowl].
+Objects = [7up, apple, kettle chips, tea, multigrain chips, coke, lime soda, jalapeno chips, rice chips, orange, grapefruit soda, pepsi, redbull, energy bar, sponge, water].
+The robot can pick up items with pick(object) and put down items with put(object) as well as find objects or locations with find(). The robot can only understand the explicit locations and objects listed.
+
+Human: I’m hungry, can you bring me some chips.
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find all the types of chips that are available.
+kettle chips, multigrain chips, jalapeno chips, and rice chips are available.
+2. Choose one of the types of chips and bring it to the user.
+I will choose kettle chips and bring them to the user.
+Plan: 1. find(kettle chips), 2. pick(kettle chips), 3. find(user), 4. put(kettle chips), 5. done().
+
+Human: How would you move the grapefruit drink from the table to the counter?
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find the grapefruit drink.
+I will find the grapefruit drink on the table.
+2. Move the grapefruit drink to the counter.
+I will move the grapefruit drink to the counter.
+Plan: 1. find(grapefruit soda), 2. pick(grapefruit soda), 3. find(counter), 4. put(grapefruit soda), 5. done().
+
+Human: How would you bring me some snacks?
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find all the types of snacks that are available.
+kettle chips, multigrain chips, jalapeno chips, rice chips, apple, orange, and energy bar are available.
+2. Choose two of the types of snacks and bring them to the user.
+I will choose jalapeno chips and apple and bring them to the user.
+Plan: 1. find(jalapeno chips), 2. pick(jalapeno chips), 3. find(user), 4. put(jalapeno chips), 5. find(apple), 6. pick(apple), 7. find(user), 8. put(apple), 9. done().
+
+Human: How would you bring me something to eat that isn’t a fruit?
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find all the types of food that are non-fruit.
+kettle chips, multigrain chips, jalapeno chips, rice chips, energy bar are available.
+2. Choose one of the types of food and bring it to the user.
+I will choose an energy bar and bring it to the user.
+Plan: 1. find(energy bar), 2. pick(energy bar), 3. find(user), 4. put(energy bar), 5. done().
+
+Human: How would you put the rice chips in the bowl and then move the tea to the table?
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find the rice chips.
+I will find the rice chips.
+2. Move the rice chips to the bowl.
+I will move the rice chips to the bowl.
+3. Find the tea.
+I will find the tea.
+4. Move the tea to the table.
+I will move the tea to the table.
+Plan: 1. find(rice chips), 2. pick(rice chips), 3. find(bowl), 4. put(rice chips), 5. find(tea), 6. pick(tea), 7. find(table), 8. put(tea), 9. done().
+
+Human: How would you throw away a redbull?
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find the redbull.
+I will find the redbull.
+2. Move the redbull to the trash.
+I will move the redbull to the trash.
+Plan: 1. find(redbull), 2. pick(redbull), 3. find(trash), 4. put(redbull), 5. done().
+
+Human: Bring me a drink.
+Explanation: To complete the task, we need to achieve the following subtasks:
+1. Find all the types of drinks that are available.
+7up, tea, coke, lime soda, grapefruit soda, pepsi, redbull, and water are available.
+2. Choose one of the types of drinks and bring it to the user.
+I will choose water and bring it to the user.
+Plan: 1. find(water), 2. pick(water), 3. find(user), 4. put(water), 5. done().

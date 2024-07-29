@@ -1,0 +1,6 @@
+{
+  "LM": "gpt-3.5-turbo",
+  "prompt_name": "LtM",
+  "n_votes": 1,
+  "no_solver": true
+}

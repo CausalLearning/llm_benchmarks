@@ -1,0 +1,2 @@
+# Q: [QUESTION]
+# To answer this question, we write a program to answer the following subquestions:

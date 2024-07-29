@@ -1,0 +1,81 @@
+Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many trees are there in the beginning?
+There are 15 trees.
+Q2. How many trees will there be after the grove workers plant trees?
+There are 21 trees.
+Final Answer: How many trees did the grove workers plant today?
+They planted 21 - 15 = 6 trees. The answer is 6.
+
+Q: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many cars are there in the beginning?
+There are 3 cars.
+Q2. How many cars arrive?
+2 more cars arrive.
+Final Answer: How many cars are in the parking lot?
+Now there are 3 + 2 = 5 cars. The answer is 5.
+
+Q: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many chocolates did Leah have in the beginning?
+Leah had 32 chocolates in the beginning.
+Q2. How many chocolates did her sister have in the beginning?
+Her sister had 42 in the beginning.
+Q3. How many chocolates did they eat?
+They ate 35 chocolates.
+Final Answer: How many chocolates do they have left in total?
+They still have 32 + 42 - 35 = 39 chocolates left in total. The answer is 39.
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many lollipops did Jason have in the beginning?
+Jason had 20 lollipops in the beginning.
+Q2. How many lollipops does Jason have now?
+Jason has 12 lollipops now.
+Final Answer: How many lollipops did Jason give to Denny?
+He gave 20 - 12 = 8 lollipops to Denny. The answer is 8.
+
+Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many toys does Shawn have in the beginning?
+Shawn has 5 toys in the beginning.
+Q2. How many toys did Shawn get from his mom?
+Shawn got 2 toys from his mom.
+Q3. How many toys did Shawn get from his dad?
+Shawn got 2 toys from his dad.
+Final Answer: How many toys does Shawn have now?
+Shawn has 5 + 2 + 2 = 9 toys now. The answer is 9.
+
+Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many computers were there in the beginning?
+There were 9 computers in the beginning.
+Q2. How many computers were added each day?
+5 computers were added each day.
+Q3. How many days were there from monday to thursday?
+There are 4 days from monday to thursday.
+Final Answer: How many computers are now in the server room?
+Now there are 9 + 4*5 = 29 computers. The answer is 29.
+
+Q: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many golf balls did Michael have in the beginning?
+Michael had 58 golf balls in the beginning.
+Q2. How many golf balls did Michael lose on tuesday?
+Michael lost 23 golf balls on tuesday.
+Q3. How many golf balls did Michael lose on wednesday?
+Michael lost 2 golf balls on wednesday.
+Final Answer: How many golf balls did Michael have at the end of wednesday?
+He had 58 - 23 - 2 = 33 balls. The answer is 33.
+
+Q: Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How much money did Olivia have in the beginning?
+Olivia had $23 in the beginning.
+Q2. How much did each bagel cost?
+Each bagel cost $3.
+Q3. How many bagels did Olivia buy?
+Olivia bought 5 bagels.
+Final Answer: How much money does Olivia have left?
+Now she has $23 - $5*3 = $8. The answer is 8.
