@@ -1,6 +1,5 @@
 # llm_benchmarks
 
-A collection of benchmarks and datasets used to evaluate the generalization, interpretability, and credibility of the LLM. (....)
 一个用于评估大语言模型（Large Language Models, LLMs）泛化能力、可解释性和可信度的基准评测数据集。
 
 
