@@ -1,37 +1,34 @@
 # llm_benchmarks
 
-A collection of benchmarks and datasets used to evaluate the generalization, interpretability, and credibility of the LLM. (....)
+一个用于评估大语言模型（Large Language Models, LLMs）泛化能力、可解释性和可信度的基准评测数据集。
 
 
+# 目录
 
-# Table of Contents
+- [泛化性](#Generalization)
+- [可解释性](#Interpretability)
+- [可信度](#Credibility)
 
-- [Generalization](#Generalization)
-- [Interpretability](#Interpretability)
-- [Credibility](#Credibility)
+# 泛化性（Generalization）
+我们使用[MuEP](https://github.com/kanxueli/MuEP)来评估大型语言模型的泛化能力。MuEP 继承了[ALFWorld](https://github.com/alfworld/alfworld) 的原始测试框架，但引入了更大的训练数据集和更细致的评估指标。MuEP的测试集主要通过以下两种方法评估模型的泛化能力：
 
-# Generalization
+##### 1. **见过和未见过的测试场景**
 
-We use [MuEP](https://github.com/kanxueli/MuEP) to evaluate the generalization of large language models. MuEP inherits the original testing framework from [ALFWorld](https://github.com/alfworld/alfworld) but incorporates a larger training dataset and fine-grained evaluation metrics. MuEP's testing set primarily assesses model generalization through two methods:
+> - **见过的场景（Seen）:** 这些场景和模型在训练期间遇到的房间具有类似性，但在对象的位置、数量和视觉外观有所不同。例如，训练期间看到抽屉里的三支红铅笔，而在测试时变为架子上的两支蓝铅笔。
+> - **为见过的场景（Unseen:）** 这些是新的任务实例，可能包含已知的对象-容器配对，但始终位于训练期间未见过的房间中，且容器和场景布局有所不同。
 
-##### 1. **Seen and Unseen Testing Scenarios**
+见过的场景集旨在衡量分布内的泛化能力，而未见集则衡量分布外的泛化能力。
 
-> - **Seen:** This includes known task instances {task-type, object, receptacle, room} in rooms encountered during training, with variations in object locations, quantities, and visual appearances. For example, two blue pencils on a shelf instead of three red pencils in a drawer seen during training.
-> - **Unseen:** These are new task instances with potentially known object-receptacle pairs, but always in rooms not seen during training, with different receptacles and scene layouts. 
+##### 2. **模板形式的指令形式和自由表达形式的指令**
+在 MuEP 中，所有任务的指令都提供模板格式和自由格式两种形式。模板指令遵循固定的句子结构，而自由格式指令则是根据不同人的语言习惯创作的多样化表达。例如以下几个示例：
 
-The seen set is designed to measure in-distribution generalization, whereas the unseen set measures out-of-distribution generalization.
-
-##### 2. **Template and Freedom-form Instruction**
-
-In MuEP, instructions for all tasks are provided in both Template and Free-form formats. The Template instructions follow a fixed sentence structure, while the Free-form instructions are diverse expressions created by humans using their own linguistic habits. Such as the following examples:
-
-> (1) For pick_and_place_simple tasks
+> (1) 对于pick_and_place_simple类型任务
 >
-> - Template Instruction: "put \<Object> in/on \<Receptacle>"
+> - 模板指令: "put \<Object> in/on \<Receptacle>"
 >
-> > ​    - Example: "put a mug in desk."
+> > ​    - 例如: "put a mug in desk."
 >
-> - Freedom-form Instruction Examples:
+> - 自由表达形式示例:
 >
 > > ​    - take the mug from the desk shelf to put it on the desk.
 > >
@@ -43,13 +40,13 @@ In MuEP, instructions for all tasks are provided in both Template and Free-form 
 > >
 > > ​    - Place the mug on the desk's edge.
 >
-> (2) For pick_heat_then_place_in_recep tasks
+> (2) 对于pick_heat_then_place_in_recep类型任务
 >
-> - Template Instruction: "cool some \<Object> and put it in \<Receptacle>"
+> - 模板指令: "cool some \<Object> and put it in \<Receptacle>"
 >
-> > ​    - Example: cool some bread and put it in countertop.
+> > ​    - 例如: cool some bread and put it in countertop.
 >
-> - Freedom-form Instruction Examples:
+> - 自由表达形式示例:
 >
 > > ​    - Put chilled bread on the counter, right of the fridge.
 > >
@@ -61,27 +58,210 @@ In MuEP, instructions for all tasks are provided in both Template and Free-form 
 > >
 > > ​    - After cooling the bread, set it on the counter next to the stove.
 
-
-
 3. ##### Parameter-Efficient Fine-Tuning (PEFT) evaluation result
 
-   ###### 3.1 Template Instruction
+###### 3.1 模板指令性能评测
+<table>
+    <tr>
+        <td></td>
+        <td align="center" colspan="5">Seen(见过的场景)</td>
+        <td align="center" colspan="5">Unseen(未见过的场景)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+    </tr>
+    <tr>
+    <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat">Baichuan2-7B</a></td>
+    <td>86.43</td>
+    <td>11.6</td>
+    <td>89.43</td>
+    <td>98.22</td>
+    <td>5.26</td>
+    <td>89.55</td>
+    <td>13.78</td>
+    <td>92.55</td>
+    <td>95.43</td>
+    <td>7.14</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/THUDM/chatglm3-6b">ChatGLM3-6B</td>
+    <td>86.43</td>
+    <td>11.84</td>
+    <td>89.22</td>
+    <td>100</td>
+    <td>31.58</td>
+    <td>81.34</td>
+    <td>12.88</td>
+    <td>84.68</td>
+    <td>99.52</td>
+    <td>44</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">Qwen2-7B</td>
+    <td>83.57</td>
+    <td>12.26</td>
+    <td>87.32</td>
+    <td>95.36</td>
+    <td>0</td>
+    <td>86.57</td>
+    <td>14.34</td>
+    <td>89.14</td>
+    <td>98.69</td>
+    <td>5.56</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">LLaMA3-8B</td>
+    <td>82.86</td>
+    <td>12.08</td>
+    <td>87.05</td>
+    <td>98.58</td>
+    <td>4.17</td>
+    <td>85.07</td>
+    <td>13.73</td>
+    <td>89.65</td>
+    <td>97</td>
+    <td>10</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">Mistral-7B</td>
+    <td>76.43</td>
+    <td>12.45</td>
+    <td>81.29</td>
+    <td>99.38</td>
+    <td>3.03</td>
+    <td>79.85</td>
+    <td>12.35</td>
+    <td>83.42</td>
+    <td>97.53</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/google/gemma-1.1-7b-it">Gemma-1.1-7b</td>
+    <td>79.29</td>
+    <td>11.61</td>
+    <td>82.76</td>
+    <td>98.05</td>
+    <td>0</td>
+    <td>83.58</td>
+    <td>13.1</td>
+    <td>87.75</td>
+    <td>100</td>
+    <td>0</td>
+</tr>
+</table>
 
-|                                                              | Seen  | Seen  |       |        | Seen  | Unseen |       |       |        |       |
-| ------------------------------------------------------------ | ----- | ----- | ----- | ------ | ----- | ------ | ----- | ----- | ------ | ----- |
-|                                                              | SR    | IS    | GCS   | LC     | RDI   | SR     | IS    | GCS   | LC     | RDI   |
-| [Baichuan2-7B](https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat) | 86.43 | 11.60 | 89.43 | 98.22  | 5.26  | 89.55  | 13.78 | 92.55 | 95.43  | 7.14  |
-| [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b)      | 86.43 | 11.84 | 86.43 | 100.00 | 31.58 | 81.34  | 12.88 | 81.34 | 99.52  | 44.00 |
-| [Qwen2-7B](https://huggingface.co/Qwen/Qwen2-7B-Instruct)    | 83.57 | 12.26 | 83.57 | 95.36  | 0.00  |        |       |       |        |       |
-| [LLaMA3-8B](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) |       |       |       |        |       |        |       |       |        |       |
-| [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) |       |       |       |        |       |        |       |       |        |       |
-| [Gemma-1.1-7b](https://huggingface.co/google/gemma-1.1-7b-it) | 79.29 | 11.61 | 79.29 | 98.05  | 0.00  | 83.58  | 13.10 | 83.58 | 100.00 | 0.00  |
+######    3.2 自由表达指令评测
+<table>
+    <tr>
+        <td></td>
+        <td align="center" colspan="5">Seen(见过的场景)</td>
+        <td align="center" colspan="5">Unseen(未见过的场景)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat">Baichuan2-7B</td>
+        <td>50</td>
+        <td>11.44</td>
+        <td>54.43</td>
+        <td>92.31</td>
+        <td>17.14</td>
+        <td>51.49</td>
+        <td>13.25</td>
+        <td>55.43</td>
+        <td>95.31</td>
+        <td>12.31</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/THUDM/chatglm3-6b">ChatGLM3-6B</td>
+        <td>40.71</td>
+        <td>11.53</td>
+        <td>45.46</td>
+        <td>96.76</td>
+        <td>24.1</td>
+        <td>50</td>
+        <td>14</td>
+        <td>56.2</td>
+        <td>99.05</td>
+        <td>19.4</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">Qwen2-7B</td>
+        <td>42.14</td>
+        <td>12.32</td>
+        <td>46</td>
+        <td>95.15</td>
+        <td>9.88</td>
+        <td>55.22</td>
+        <td>15.08</td>
+        <td>58.63</td>
+        <td>94.67</td>
+        <td>6.67</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">LLaMA3-8B</td>
+        <td>41.43</td>
+        <td>11.74</td>
+        <td>45.92</td>
+        <td>94.35</td>
+        <td>10.98</td>
+        <td>47.76</td>
+        <td>14.27</td>
+        <td>51.53</td>
+        <td>93.86</td>
+        <td>7.14</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">Mistral-7B</td>
+        <td>34.29</td>
+        <td>12.54</td>
+        <td>37.46</td>
+        <td>90.71</td>
+        <td>19.57</td>
+        <td>47.01</td>
+        <td>12.87</td>
+        <td>52.23</td>
+        <td>94.41</td>
+        <td>16.9</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/google/gemma-1.1-7b-it">Gemma-1.1-7b</td>
+        <td>40.71</td>
+        <td>11.75</td>
+        <td>45.25</td>
+        <td>97.64</td>
+        <td>7.23</td>
+        <td>52.24</td>
+        <td>12.56</td>
+        <td>55.65</td>
+        <td>97.76</td>
+        <td>1.56</td>
+    </tr>
+</table>
 
-######    3.2 Freedom-form Instruction
 
-
-
-# Interpretability
+# 可解释性（Interpretability）
 
 我们使用[Faithful-COT](https://github.com/veronica320/Faithful-COT)来评估大模型的可解释性。思维链（chain-of-thought，COT）作为一种解释大模型内部推理过程的方法，在一定程度上反映了模型的忠实性，即模型内部的行为。Faithful-COT使用了两阶段过程达成模型的忠实推理：
 > - **解释推理过程:** 在第一阶段中，不同的模型根据问题与提示模板，生成一系列子问题展示求解过程，即大模型思维链。
@@ -159,4 +339,4 @@ CLUTRR        62.0       57.0     81.0        13.0        72.0
 
 
 
-# Credibility
+# 可信度（Credibility）
