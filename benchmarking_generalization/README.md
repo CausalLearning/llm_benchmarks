@@ -79,104 +79,104 @@ python network_textworld_client.py
 
 1. ##### 见过和未见过的场景评测
 
-   <table>
-       <tr>
-           <td></td>
-           <td align="center" colspan="5">Seen(见过的场景)</td>
-           <td align="center" colspan="5">Unseen(未见过的场景)</td>
-       </tr>
-       <tr>
-           <td></td>
-           <td>SR</td>
-           <td>IS</td>
-           <td>GCS</td>
-           <td>LC</td>
-           <td>RDI</td>
-           <td>SR</td>
-           <td>IS</td>
-           <td>GCS</td>
-           <td>LC</td>
-           <td>RDI</td>
-       </tr>
-       <tr>
-       <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat">Baichuan2-7B</a></td>
-       <td>86.43</td>
-       <td>11.6</td>
-       <td>89.43</td>
-       <td>98.22</td>
-       <td>5.26</td>
-       <td>89.55</td>
-       <td>13.78</td>
-       <td>92.55</td>
-       <td>95.43</td>
-       <td>7.14</td>
-   </tr>
-   <tr>
-       <td><a href="https://huggingface.co/THUDM/chatglm3-6b">ChatGLM3-6B</td>
-       <td>86.43</td>
-       <td>11.84</td>
-       <td>89.22</td>
-       <td>100</td>
-       <td>31.58</td>
-       <td>81.34</td>
-       <td>12.88</td>
-       <td>84.68</td>
-       <td>99.52</td>
-       <td>44</td>
-   </tr>
-   <tr>
-       <td><a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">Qwen2-7B</td>
-       <td>83.57</td>
-       <td>12.26</td>
-       <td>87.32</td>
-       <td>95.36</td>
-       <td>0</td>
-       <td>86.57</td>
-       <td>14.34</td>
-       <td>89.14</td>
-       <td>98.69</td>
-       <td>5.56</td>
-   </tr>
-   <tr>
-       <td><a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">LLaMA3-8B</td>
-       <td>82.86</td>
-       <td>12.08</td>
-       <td>87.05</td>
-       <td>98.58</td>
-       <td>4.17</td>
-       <td>85.07</td>
-       <td>13.73</td>
-       <td>89.65</td>
-       <td>97</td>
-       <td>10</td>
-   </tr>
-   <tr>
-       <td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">Mistral-7B</td>
-       <td>76.43</td>
-       <td>12.45</td>
-       <td>81.29</td>
-       <td>99.38</td>
-       <td>3.03</td>
-       <td>79.85</td>
-       <td>12.35</td>
-       <td>83.42</td>
-       <td>97.53</td>
-       <td>0</td>
-   </tr>
-   <tr>
-       <td><a href="https://huggingface.co/google/gemma-1.1-7b-it">Gemma-1.1-7b</td>
-       <td>79.29</td>
-       <td>11.61</td>
-       <td>82.76</td>
-       <td>98.05</td>
-       <td>0</td>
-       <td>83.58</td>
-       <td>13.1</td>
-       <td>87.75</td>
-       <td>100</td>
-       <td>0</td>
-   </tr>
-   </table>
+<table>
+    <tr>
+        <td></td>
+        <td align="center" colspan="5">Seen(见过的场景)</td>
+        <td align="center" colspan="5">Unseen(未见过的场景)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+        <td>SR</td>
+        <td>IS</td>
+        <td>GCS</td>
+        <td>LC</td>
+        <td>RDI</td>
+    </tr>
+    <tr>
+    <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat">Baichuan2-7B</a></td>
+    <td>86.43</td>
+    <td>11.6</td>
+    <td>89.43</td>
+    <td>98.22</td>
+    <td>5.26</td>
+    <td>89.55</td>
+    <td>13.78</td>
+    <td>92.55</td>
+    <td>95.43</td>
+    <td>7.14</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/THUDM/chatglm3-6b">ChatGLM3-6B</td>
+    <td>86.43</td>
+    <td>11.84</td>
+    <td>89.22</td>
+    <td>100</td>
+    <td>31.58</td>
+    <td>81.34</td>
+    <td>12.88</td>
+    <td>84.68</td>
+    <td>99.52</td>
+    <td>44</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">Qwen2-7B</td>
+    <td>83.57</td>
+    <td>12.26</td>
+    <td>87.32</td>
+    <td>95.36</td>
+    <td>0</td>
+    <td>86.57</td>
+    <td>14.34</td>
+    <td>89.14</td>
+    <td>98.69</td>
+    <td>5.56</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">LLaMA3-8B</td>
+    <td>82.86</td>
+    <td>12.08</td>
+    <td>87.05</td>
+    <td>98.58</td>
+    <td>4.17</td>
+    <td>85.07</td>
+    <td>13.73</td>
+    <td>89.65</td>
+    <td>97</td>
+    <td>10</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">Mistral-7B</td>
+    <td>76.43</td>
+    <td>12.45</td>
+    <td>81.29</td>
+    <td>99.38</td>
+    <td>3.03</td>
+    <td>79.85</td>
+    <td>12.35</td>
+    <td>83.42</td>
+    <td>97.53</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td><a href="https://huggingface.co/google/gemma-1.1-7b-it">Gemma-1.1-7b</td>
+    <td>79.29</td>
+    <td>11.61</td>
+    <td>82.76</td>
+    <td>98.05</td>
+    <td>0</td>
+    <td>83.58</td>
+    <td>13.1</td>
+    <td>87.75</td>
+    <td>100</td>
+    <td>0</td>
+</tr>
+</table>
 
 2. ##### 固定模板和自由表达形式指令评测
 

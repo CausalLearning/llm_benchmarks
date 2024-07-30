@@ -5,11 +5,11 @@
 
 # 目录
 
-- [泛化性](#Generalization)
-- [可解释性](#Interpretability)
-- [可信度](#Credibility)
+- [泛化性评测](#泛化性评测)
+- [可解释性评测](#可解释性评测)
+- [可信度评测](#可信度评测)
 
-# 泛化性（Generalization）
+# 泛化性评测
 我们使用[MuEP](https://github.com/kanxueli/MuEP)来评估大型语言模型的泛化能力。MuEP 继承了[ALFWorld](https://github.com/alfworld/alfworld) 的原始测试框架，但引入了更大的训练数据集和更细致的评估指标。MuEP的测试集主要通过以下两种方法评估模型的泛化能力：
 
 ##### 1. **见过和未见过的测试场景**
@@ -259,11 +259,11 @@
         <td>1.56</td>
     </tr>
 </table>
-模型泛化性评测更多细节见[benchmarking_generalization](./benchmarking_generalization/README.md)
+模型泛化性评测更多细节见[benchmarking_generalization](benchmarking_generalization/README.md)
 
 
 
-# 可解释性（Interpretability）
+# 可解释性评测
 
 我们使用[Faithful-COT](https://github.com/veronica320/Faithful-COT)来评估大模型的可解释性。思维链（chain-of-thought，COT）作为一种解释大模型内部推理过程的方法，在一定程度上反映了模型的忠实性，即模型内部的行为。Faithful-COT使用了两阶段过程达成模型的忠实推理：
 > - **解释推理过程:** 在第一阶段中，不同的模型根据问题与提示模板，生成一系列子问题展示求解过程，即大模型思维链。
@@ -343,4 +343,4 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 
 
 
-# 可信度（Credibility）
+# 可信度评测
