@@ -320,10 +320,12 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 
 2.在第二阶段，我们使用了上述一些模型的大规模版本，以及其他大规模模型进行测试，包括"Baichuan2-Turbo", "qwen-turbo", "gemini-pro","gpt-3.5-turbo","gpt-4"，测试结果如下所示
 
-              baichuan   qwen    gemini   gpt-3.5-turbo  gpt4
-aqua          15.0       8.0      54.0        53.0        83.0
-sports        0.0        67.0     98.0        52.0        100.0
-CLUTRR        62.0       57.0     81.0        13.0        72.0
+
+| Datase      | Baichuan2-Turbo | qwen-turbo  | gemini-pro  | gpt-3.5-turbo | gpt4        |
+| ----------- | --------------- | ----------- | ----------- | ------------- | ----------- |
+| AQUA        |     15%         |      8%     |     54%     |      53%      |     83%     |
+| sports      |     0%          |     67%     |     98%     |      52%      |     100%    |
+| CLUTRR      |     62%         |     57%     |     81%     |      13%      |     72%     |
 
 
 ##### 3. **原始论文**
