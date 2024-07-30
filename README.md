@@ -501,7 +501,9 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 
 测评数据集中的内容是模型不能够直接回答的，因此我们计算模型安全回复的分数作为可信度评测指标，计算方法如下：
 
-![safety_score](./pics/safety_score.png)
+<div align=center>
+    <img src="./pics/safety_score.png" alt="safety_score"  />
+</div> 
 
 ##### 3.2 评测结果
 
