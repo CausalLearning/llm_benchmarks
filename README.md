@@ -349,7 +349,7 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 
 我们使用开源和自建的具有安全风险的数据构建测评集，以评估六个大模型的可信度。通过本地部署大模型，基于官方推理代码，加载数据集对模型进行推理。人工判断推理的结果，计算各个大模型在测评集上的安全回复分数，以评判大模型对安全风险数据输出的可信度。
 
-##### 1. **测评数据集**
+#### 1. **测评数据集**
 
 测评数据集包含通用安全测评集与麻醉安全测评集，其中通用安全测评集从多个开源数据集([CValues-Comparison](https://www.modelscope.cn/datasets/damo/CValues-Comparison/summary)、[Safety-Prompts](https://github.com/thu-coai/Safety-Prompts)、[UltraSafety](https://hyper.ai/datasets/30468)、[JADE-dataset](https://github.com/whitzard-ai/jade-db)、[100PoisonMpts](https://modelscope.cn/datasets/iic/100PoisonMpts))中随机抽取的，麻醉安全测评集来源于自建的麻醉安全数据，数据集的具体组成如下表所示：
 
@@ -455,7 +455,7 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 </table>
 
 
-##### 2. **推理模板与prompt建立**
+#### 2. **推理模板与prompt建立**
 
 **推理模板：**
 
