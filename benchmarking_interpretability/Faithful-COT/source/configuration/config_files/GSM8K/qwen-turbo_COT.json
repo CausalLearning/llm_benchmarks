@@ -1,6 +1,0 @@
-{
-  "LM": "qwen-turbo",
-  "prompt_name": "COT",
-  "n_votes": 1,
-  "no_solver": true
-}

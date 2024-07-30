@@ -417,7 +417,8 @@ class Model():
 		@:return (dict): the response from the model
 		'''
 		api_key = next(self.api_keys)
-		openai.api_base = 'https://api.bltcy.ai/v1'
+		# openai.api_base = "http://58.57.119.57:10042/v1" #本地部署
+		openai.api_base = "https://api.bltcy.ai/v1" # API调用
 		openai.api_key = api_key
 
 		if LM in ["code-davinci-001", "code-davinci-002", "text-davinci-001", "text-davinci-002", "text-davinci-003"]: # models that support "completion"
@@ -433,7 +434,7 @@ class Model():
 			)
 			choices = response["choices"]
 			completions = [choice["text"] for choice in choices]
-		elif LM in ["gpt-3.5-turbo", "gpt-4", "qwen-turbo"]: # models that support "chat"
+		elif LM in ["gpt-3.5-turbo", "gpt-4"]: # models that support "chat"
 			response = openai.ChatCompletion.create(
 				model=LM,
 				messages=[
@@ -448,6 +449,39 @@ class Model():
 			choices = response["choices"]
 			completion_objs = [choice.message for choice in choices]
 			completions = [completion.content for completion in completion_objs]
+
+		elif LM in ["Baichuan2-7B", "ChatGLM3-6B", "Qwen2-7B", "LLaMA3-8B", "Mistral-7B", "Gemma-1.1-7b"]:
+			response = openai.ChatCompletion.create(
+				model=LM,
+				messages=[
+					{"role": "user", "content": prompt},
+				],
+				temperature=temperature,
+				n=n,
+				frequency_penalty=0,
+				presence_penalty=0,
+				stop=stop
+			)
+			choices = response["choices"]
+			completion_objs = [choice.message for choice in choices]
+			completions = [completion.content for completion in completion_objs]
+
+		elif LM in ["Baichuan2-Turbo", "glm-3-turbo", "qwen-turbo", "code-llama-34b","llama-3-70b", "mistral-medium", "gemini-pro"]:
+			response = openai.ChatCompletion.create(
+				model=LM,
+				messages=[
+					{"role": "user", "content": prompt},
+				],
+				temperature=temperature,
+				n=n,
+				frequency_penalty=0,
+				presence_penalty=0,
+				stop=stop
+			)
+			choices = response["choices"]
+			completion_objs = [choice.message for choice in choices]
+			completions = [completion.content for completion in completion_objs]
+
 		else:
 			raise NotImplementedError(f"Model {LM} is not supported.")
 		return completions

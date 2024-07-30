@@ -104,7 +104,7 @@ def evaluate_acc(dataset, predictions, dataset_name, non_empty_only=False, valid
 		# 		print("Completion:\n ", prediction["completion"])
 		# 		print("\n")
 
-		if debug and total_count >= 10:
+		if debug and total_count >= 100:
 			break
 
 	acc = round(correct_count / total_count * 100, 1)
@@ -127,8 +127,10 @@ if __name__ == "__main__":
 	non_empty_only = args.non_empty_only
 	valid_only = args.valid_only
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{model_name}.json"
-	config = Config.from_json_file(config_frn)
+	# config_frn = f"source/configuration/config_files/{dataset_name}/{model_name}.json"
+	# config = Config.from_json_file(config_frn)
+
+	config = Config.from_dict({"LM": model_name,"prompt_name": "NL+SL","n_votes": 1})
 
 	# load the dataset
 	dataset_frn = f"data/{dataset_name}/{split}.jsonl"

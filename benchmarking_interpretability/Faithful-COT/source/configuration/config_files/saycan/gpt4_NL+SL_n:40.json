@@ -1,7 +1,0 @@
-{
-  "LM": "gpt-4",
-  "prompt_name": "NL+SL",
-  "n_votes": 40,
-  "batch_size": 10,
-  "no_solver": false
-}

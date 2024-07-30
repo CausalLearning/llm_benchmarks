@@ -34,8 +34,9 @@ if __name__ == "__main__":
 
 	api_keys = [API_KEYS[api_key_id] for api_key_id in api_key_ids]
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{model_name}.json"
-	config = Config.from_json_file(config_frn)
+	# config_frn = f"source/configuration/config_files/{dataset_name}/{model_name}.json"
+	config = Config.from_dict({"LM": model_name,"prompt_name": "NL+SL","n_votes": 1})
+	
 	config.dataset_name = dataset_name
 	config.split = split
 	config.api_keys = api_keys
@@ -72,7 +73,7 @@ if __name__ == "__main__":
 		writer = jsonlines.Writer(fw, flush=True)
 		t0 = time.time()
 		for i, example in tqdm(enumerate(dataset), file=sys.stdout):
-			if debug and i >= 10:
+			if debug and i >= 100:
 				break
 			if i < start_id:
 				continue
