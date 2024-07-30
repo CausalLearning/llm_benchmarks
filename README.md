@@ -5,21 +5,21 @@
 
 # 目录
 
-- [泛化性评测](#泛化性评测)
-- [可解释性评测](#可解释性评测)
-- [可信度评测](#可信度评测)
+- ### [泛化性评测](#泛化性评测)
+- ### [可解释性评测](#可解释性评测)
+- ### [可信度评测](#可信度评测)
 
 # 泛化性评测
 我们使用[MuEP](https://github.com/kanxueli/MuEP)来评估大型语言模型的泛化能力。MuEP 继承了[ALFWorld](https://github.com/alfworld/alfworld) 的原始测试框架，但引入了更大的训练数据集和更细致的评估指标。MuEP的测试集主要通过以下两种方法评估模型的泛化能力：
 
-##### 1. **见过和未见过的测试场景**
+#### 1. **见过和未见过的测试场景**
 
 > - **见过的场景（Seen）:** 这些场景和模型在训练期间遇到的房间具有类似性，但在对象的位置、数量和视觉外观有所不同。例如，训练期间看到抽屉里的三支红铅笔，而在测试时变为架子上的两支蓝铅笔。
 > - **为见过的场景（Unseen:）** 这些是新的任务实例，可能包含已知的对象-容器配对，但始终位于训练期间未见过的房间中，且容器和场景布局有所不同。
 
 见过的场景集旨在衡量分布内的泛化能力，而未见集则衡量分布外的泛化能力。
 
-##### 2. **模板形式的指令形式和自由表达形式的指令**
+#### 2. **模板形式的指令形式和自由表达形式的指令**
 在 MuEP 中，所有任务的指令都提供模板格式和自由格式两种形式。模板指令遵循固定的句子结构，而自由格式指令则是根据不同人的语言习惯创作的多样化表达。例如以下几个示例：
 
 > (1) 对于pick_and_place_simple类型任务
@@ -58,9 +58,11 @@
 > >
 > > ​    - After cooling the bread, set it on the counter next to the stove.
 
-3. ##### Parameter-Efficient Fine-Tuning (PEFT) evaluation result
 
-###### 3.1 模板指令性能评测
+
+#### 3. 模型泛化性评测结果
+
+##### 3.1 模板指令性能评测
 <table>
     <tr>
         <td></td>
@@ -160,7 +162,7 @@
 </tr>
 </table>
 
-######    3.2 自由表达指令评测
+#####    3.2 自由表达指令评测
 <table>
     <tr>
         <td></td>
@@ -259,7 +261,7 @@
         <td>1.56</td>
     </tr>
 </table>
-模型泛化性评测更多细节见[benchmarking_generalization](benchmarking_generalization/README.md)
+模型泛化性评测更多细节见[benchmarking_generalization](benchmarking_generalization)
 
 
 
@@ -271,7 +273,7 @@
 
 在这个过程中，我们使用最终的结果的精确率衡量模型的可解释性，模型的可解释性越好，则其生成的思维链越准确，之后求解器所获得的推理结果精确率越高；若模型的可解释性差，则其生成的推理过程并不符合客观真实的推理过程，导致最终结果的精确率较差。
 
-##### 1. **推理数据集**
+#### 1. **推理数据集**
 我们按照Faithful-COT原论文，使用了10个评估数据集，其中包括五个数学单词问题（Meth Word Problems，MWP），三个多跳问答数据集（Multi-hop QA），一个规划数据集（Planning）和一个关系推理（Relation inference）数据集。
 
 >MWP: GSM8K (Cobbe et al., 2021), SVAMP (Patel et al., 2021), MultiArith (Roy and Roth, 2015), ASDiv (Miao et al., 2020), and AQuA (Ling et al., 2017)
@@ -286,7 +288,7 @@
 >Relation inference: CLUTRR (Sinha et al.,2019) 
 >>示例："question": "[Michael] and his wife [Alma] baked a cake for [Jennifer], his daughter.\nQuestion: How is [Jennifer] related to [Alma]?", "answer": "husband-daughter #### daughter", "k": 2
 
-##### 2. **不同模型的评估结果**
+#### 2. **不同模型的评估结果**
 1.我们首先使用了小规模模型进行测试，包括 "Baichuan2-7B", "ChatGLM3-6B", "Qwen2-7B", "LLaMA3-8B", "Mistral-7B", "Gemma-1.1-7b"。在大多数情况下，模型会出现重复示例、超出范围的选项等问题，AQUA数据集的测试示例如下所示：
 
 ```
@@ -330,7 +332,7 @@ Qwen2-7B:{"id": 2, "answer": "N", "completion": "# Question: In a flight of 600 
 | CLUTRR      |     62%         |     57%     |     81%     |      13%      |     72%     |
 
 
-##### 3. **原始论文**
+#### 3. **原始论文**
 
 ```
 @article{lyu2023faithful,
@@ -540,4 +542,3 @@ $$
         <td align="center">97.98</td>
     </tr>
 </table>
-
