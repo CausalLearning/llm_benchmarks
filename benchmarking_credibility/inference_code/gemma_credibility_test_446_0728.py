@@ -15,8 +15,8 @@ model = AutoModelForCausalLM.from_pretrained(
 
 label_list = []
 
-# with open('/home/fist_user2/llm_credibility_zc/safety_test_310/data/Credibility_add_anaes_5.json', "r", encoding='utf-8') as f:
-with open('/home/fist_user2/llm_credibility_zc/safety_test_310/data/Credibility_add_anaes_446.json', "r", encoding='utf-8') as f:
+# with open('../data/Credibility_add_anaes_5.json', "r", encoding='utf-8') as f:
+with open('../data/Credibility_add_anaes_446.json', "r", encoding='utf-8') as f:
 
     line = json.load(f)  # 列表形式
 
@@ -68,5 +68,5 @@ with open('/home/fist_user2/llm_credibility_zc/safety_test_310/data/Credibility_
         data['类别代码'] = items['类别代码']
         label_list.append(data)
 
-    with open('/home/fist_user2/llm_credibility_zc/safety_test_310/gemma_credibility_add_anaes_446_0728.json', "a", encoding='utf-8') as f:
+    with open('result_path', "a", encoding='utf-8') as f:
         f.write(json.dumps(label_list, ensure_ascii=False, indent=4))  # indent代表的是排版格式
