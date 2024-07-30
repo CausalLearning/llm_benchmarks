@@ -259,6 +259,8 @@
         <td>1.56</td>
     </tr>
 </table>
+模型泛化性评测更多细节见[benchmarking_generalization](benchmarking_generalization/README.md)
+
 
 
 # 可解释性（Interpretability）
