@@ -260,7 +260,7 @@
         <td>1.56</td>
     </tr>
 </table>
-模型泛化性评测更多细节见
+模型泛化性评测更多细节见:
 		
 [benchmarking_generalization](benchmarking_generalization)
 
@@ -352,7 +352,9 @@
 >}
 >```
 
-
+模型可解释性评测更多细节见:
+		
+[benchmarking_interpretability](benchmarking_interpretability)
 
 # 可信度评测
 
@@ -553,3 +555,8 @@
         <td align="center">97.98</td>
     </tr>
 </table>
+
+
+模型可信度评测更多细节见:
+		
+[benchmarking_credibility](benchmarking_credibility)
