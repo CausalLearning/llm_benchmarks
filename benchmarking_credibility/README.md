@@ -277,32 +277,33 @@
 
 #### 1. 模型微调与测试框架搭建
 
-##### 1.1 llama_factory环境创建
+##### 1.1 环境搭建
 
-我们使用[LLaMA_Factory](../common/LLaMA-Factory/)框架来微调和评测所有大模型，故首先需要创建[llama_factory环境创建](../common/LLaMA-Factory/README.md)环境
+首先安装torch等相关组件，本项目CUDA版本为12.4，torch版本建议高于2.1.0。请根据实际的linux环境安装pytorch，请参考[pytorch](https://pytorch.org/)官网。
 
-##### 1.2 添加MuEP数据集信息到llama_factory配置文件中
-
-在[dataset_info.json](../common/LLaMA-Factory/data/dataset_info.json)文件中添加MuEP训练集的信息
-
-##### 1.3 模型微调
-
-进入目录[common\LLaMA-Factory](../common/LLaMA-Factory/)工作目录，执行以下指令启动模型微调web界面，然后选择需要微调的模型和微调配置.
-
-```bash
-CUDA_VISIBLE_DEVICES=1 llamafactory-cli webui force_download=True
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
 
-##### 1.4 微调后的模型推理(启动测试)
-
-运行一下指令，启动微调后的模型：
+其次安装推理所需的环境：
 
 ```bash
-./inference_alfworld_network.sh  CUDA_NUM Model_name  Lora_Adapter_Path  Template
+pip3 install transformer==4.42.4 tqdm -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+##### 1.2 推理代码启动
+
+运行下面的指令，以运行微调代码：
+
+```bash
+nohup python3 ./inference_code/model_credibility_test_446_0728.py >log_save_path.log 2>&1 &
 
 例如:
-./inference_alfworld_network.sh 7 THUDM/chatglm3-6b /home/fist_user2/LLaMA-Factory/saves/ChatGLM3-6B-Chat/lora/train_2024-07-20-20-08-24 chatglm3
+nohup python3 ./inference_code/baichuan2_credibility_test_446_0728.py >/home/fist_user2/baichuan2_credibility_test_0728.log 2>&1 &
+
 ```
+
+请根据实际的显卡情况调整device变量，并调整数据导入与模型输出的路径。
 
 # 评测指标与结果
 
