@@ -260,7 +260,7 @@
         <td>1.56</td>
     </tr>
 </table>
-模型泛化性评测更多细节见 [generalization](benchmarking_generalization/README.md)
+模型泛化性评测更多细节见 [benchmarking_generalization](benchmarking_generalization/README.md)
 
 
 
