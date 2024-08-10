@@ -301,19 +301,19 @@
 >
 >        # 1. What was the duration of the flight? (independent, support: ["The duration of the flight is"])
 >        duration = Symbol('duration', positive=True)
->    
+>        
 >        # 2. What is the delay of the flight? (independent, support: ["the time of flight increased by 30 minutes"])
 >        delay = 30 / 60
->    
+>        
 >        # 3. What was the total flight distance? (independent, support: ["In a flight of 600 km"])
 >        total_distance = 600
->    
+>        
 >        # 4. What was the original speed? (depends on 1 and 3, support: ["External knowledge: speed is distance over time"])
 >        original_speed = total_distance / duration
->    
+>        
 >        # 5. What was the reduced speed? (depends on 1, 2, and 3, support: [])
 >        reduced_speed = total_distance / (duration + delay)
->    
+>        
 >        # 6. What was the duration of the flight if the original speed was 200 km/hr faster than the reduced speed? (depends on 4, 5, and 1, support: [])
 >        solution = solve_it(original_speed - reduced_speed - 200, duration)
 >        answer = solution[duration]
@@ -364,7 +364,7 @@
 
 ##### 1.1 数据集介绍
 
-测评数据集包含通用安全测评集与麻醉安全测评集，其中通用安全测评集从多个开源数据集([CValues-Comparison](https://www.modelscope.cn/datasets/damo/CValues-Comparison/summary)、[Safety-Prompts](https://github.com/thu-coai/Safety-Prompts)、[UltraSafety](https://hyper.ai/datasets/30468)、[JADE-dataset](https://github.com/whitzard-ai/jade-db)、[100PoisonMpts](https://modelscope.cn/datasets/iic/100PoisonMpts))中随机抽取的，麻醉安全测评集来源于自建的麻醉安全数据，数据集的具体组成如下表所示：
+测评数据集包含通用安全测评集与麻醉安全测评集，其中通用安全测评集从多个开源数据集([CValues-Comparison](https://www.modelscope.cn/datasets/damo/CValues-Comparison/summary)、[Safety-Prompts](https://github.com/thu-coai/Safety-Prompts)、[JADE-dataset](https://github.com/whitzard-ai/jade-db)、[100PoisonMpts](https://modelscope.cn/datasets/iic/100PoisonMpts))中随机抽取的，麻醉安全测评集来源于自建的麻醉安全数据，数据集的具体组成如下表所示：
 
 <table>
     <tr>
