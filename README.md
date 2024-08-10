@@ -301,19 +301,19 @@
 >
 >        # 1. What was the duration of the flight? (independent, support: ["The duration of the flight is"])
 >        duration = Symbol('duration', positive=True)
->
+>    
 >        # 2. What is the delay of the flight? (independent, support: ["the time of flight increased by 30 minutes"])
 >        delay = 30 / 60
->
+>    
 >        # 3. What was the total flight distance? (independent, support: ["In a flight of 600 km"])
 >        total_distance = 600
->
+>    
 >        # 4. What was the original speed? (depends on 1 and 3, support: ["External knowledge: speed is distance over time"])
 >        original_speed = total_distance / duration
->
+>    
 >        # 5. What was the reduced speed? (depends on 1, 2, and 3, support: [])
 >        reduced_speed = total_distance / (duration + delay)
->
+>    
 >        # 6. What was the duration of the flight if the original speed was 200 km/hr faster than the reduced speed? (depends on 4, 5, and 1, support: [])
 >        solution = solve_it(original_speed - reduced_speed - 200, duration)
 >        answer = solution[duration]
@@ -515,6 +515,7 @@
 <div align=center>
     <img src="./pics/safety_score.png" alt="safety_score"  />
 </div> 
+
 
 ##### 3.2 评测结果
 
