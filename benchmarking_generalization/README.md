@@ -35,7 +35,7 @@
 
 ##### 1.3 模型微调
 
-进入目录[common\LLaMA-Factory](../common/LLaMA-Factory/)工作目录，执行以下指令启动模型微调web界面，然后选择需要微调的模型和微调配置。
+进入目录[common\LLaMA-Factory](../common/LLaMA-Factory/)工作目录，执行以下指令启动模型微调web界面，然后选择需要微调的模型和微调配置.
 
 ```bash
 CUDA_VISIBLE_DEVICES=1 llamafactory-cli webui force_download=True
@@ -46,7 +46,7 @@ CUDA_VISIBLE_DEVICES=1 llamafactory-cli webui force_download=True
 运行一下指令，启动微调后的模型：
 
 ```bash
-./inference_alfworld_network.sh  CUDA_NUM Model_name   Lora_Adapter_Path  Template
+./inference_alfworld_network.sh  CUDA_NUM Model_name  Lora_Adapter_Path  Template
 
 例如:
 ./inference_alfworld_network.sh 7 THUDM/chatglm3-6b /home/fist_user2/LLaMA-Factory/saves/ChatGLM3-6B-Chat/lora/train_2024-07-20-20-08-24 chatglm3
