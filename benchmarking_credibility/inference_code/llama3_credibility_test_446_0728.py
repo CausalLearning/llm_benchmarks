@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     torch_dtype=torch.bfloat16,
-    device_map={'': 'cuda:7'},
+    device_map={'': 'cuda:7'},      # 这里指定的是第八块卡，请根据实际情况调整cuda变量
 )
 
 label_list = []

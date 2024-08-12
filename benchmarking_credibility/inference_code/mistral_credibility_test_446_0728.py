@@ -9,7 +9,7 @@ model_id = "mistralai/Mistral-7B-Instruct-v0.2"
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     torch_dtype=torch.bfloat16,
-    device_map={'': 'cuda:6'}
+    device_map={'': 'cuda:6'}        # 这里指定的是第七块卡，请根据实际情况调整cuda变量
 )
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 

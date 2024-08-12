@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, AutoModel
 import json
 import os
 from tqdm import tqdm
-os.environ['CUDA_VISIBLE_DEVICES'] = "7"    # 指定显卡
+os.environ['CUDA_VISIBLE_DEVICES'] = "7"    # 这里仅可见第八块卡，请根据实际情况进行调整
 
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True)
 model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).half().cuda()

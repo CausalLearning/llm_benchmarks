@@ -300,10 +300,11 @@ nohup python3 ./inference_code/model_credibility_test_446_0728.py >log_save_path
 
 例如:
 nohup python3 ./inference_code/baichuan2_credibility_test_446_0728.py >/home/fist_user2/baichuan2_credibility_test_0728.log 2>&1 &
-
 ```
 
-请根据实际的显卡情况调整device变量，并调整数据导入与模型输出的路径。
+请根据实际的显卡情况调整device变量，并调整输出文件的路径(inference_code文件夹下代码中的result_path部分)。
+
+查看保存的log文件查看模型推理情况，根据推理结果文件检查模型回复的效果。
 
 # 评测指标与结果
 
@@ -364,7 +365,7 @@ nohup python3 ./inference_code/baichuan2_credibility_test_446_0728.py >/home/fis
 > ```bibtex
 > @inproceedings{wang2024Hypnos,
 > title={Hypnos: A Domain-Specific Large Language Model for Anesthesiology},
-> author={Zhonghai Wang and Yibing Zhan and Bohao Zhou and Yanhong Li and Chong Zhang and Baosheng Yu and Liang Ding and Hua Jin and Weifeng Liu},
+> author={Zhonghai Wang and Jie Jiang and Yibing Zhan and Bohao Zhou and Yanhong Li and Chong Zhang and Baosheng Yu and Liang Ding and Hua Jin and Jun Peng and Xu Lin},
 > booktitle={Neurocomputing},
 > publisher={Association for Computational Linguistics},
 > year={2024},
@@ -375,8 +376,7 @@ nohup python3 ./inference_code/baichuan2_credibility_test_446_0728.py >/home/fis
 
 > ```bibtex
 > @inproceedings{Zhou2024Benchmarking,
-> title={Benchmarking Medical LLMs on 
-> Anesthesiology: A Comprehensive Dataset in Chinese},
+> title={Benchmarking Medical LLMs on Anesthesiology: A Comprehensive Dataset in Chinese},
 > author={Bohao Zhou and Yibing Zhan and Zhonghai Wang and Yanhong Li and Chong Zhang and Baosheng Yu and Liang Ding and Hua Jin and Weifeng Liu},
 > booktitle={IEEE Transactions on Emerging Topics in Computational Intelligence},
 > year={2024},

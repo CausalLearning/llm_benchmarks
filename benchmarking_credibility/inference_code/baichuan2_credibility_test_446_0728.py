@@ -7,7 +7,7 @@ from tqdm import tqdm
 tokenizer = AutoTokenizer.from_pretrained("baichuan-inc/Baichuan2-7B-Chat", use_fast=False, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     "baichuan-inc/Baichuan2-7B-Chat",
-    device_map={'': 'cuda:7'},
+    device_map={'': 'cuda:7'},      # 这里指定的是第八块卡，请根据实际情况调整cuda变量
     torch_dtype=torch.bfloat16,
     trust_remote_code=True
 )
