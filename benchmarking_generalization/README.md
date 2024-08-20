@@ -309,3 +309,20 @@ python network_textworld_client.py
 > ```
 
 3. MuEP
+
+> ```bibtex
+> @inproceedings{ijcai2024p15,
+>   title     = {MuEP: A Multimodal Benchmark for Embodied Planning with Foundation Models},
+>   author    = {Li, Kanxue and Yu, Baosheng and Zheng, Qi and Zhan, Yibing and Zhang, Yuhui and Zhang, Tianle and Yang, Yijun and Chen, Yue and Sun, Lei and Cao, Qiong and Shen, Li and Li, Lusong and Tao, Dapeng and He, Xiaodong},
+>   booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+>                Artificial Intelligence, {IJCAI-24}},
+>   publisher = {International Joint Conferences on Artificial Intelligence Organization},
+>   editor    = {Kate Larson},
+>   pages     = {129--138},
+>   year      = {2024},
+>   month     = {8},
+>   note      = {Main Track},
+>   doi       = {10.24963/ijcai.2024/15},
+>   url       = {https://doi.org/10.24963/ijcai.2024/15},
+> }
+> ```
