@@ -15,6 +15,8 @@ import numpy as np
 import random
 from typing import Dict, Any, Union
 from textworld_server import Textworld_Env
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+from rouge import Rouge
 
 try:
     import platform
@@ -34,7 +36,7 @@ format_time = time.strftime("%Y%m%d%H%M%S", time_array)
 	
 # method = f"eval-{model_name}-{args.template}"
 # llama3 gemma1.1 baichuan2 chatglm3 mistral qwen
-model_name = "baichuan2"
+model_name = "llama3"
 scene_type = "unseen"
 # scene_type = "seen"
 	
@@ -171,9 +173,10 @@ def post_process(action, max_len=30):
         words = string.split()
         word_count = len(words)
         if word_count > max_len:
-	        words = words[:max_len]
-			
+            words = words[:max_len]
+            
         return ' '.join(words)
+
     act = max_len_process(action)
     if len(act) > max_len:
         return act[:max_len]
@@ -290,7 +293,7 @@ def action_retified_v2(valid_actions, action, planing_context, long_horizon_acti
         else:
             action = candidates[0]
         logger.info(f'###action_retified: [{original_action}] --> [{action}]')
-        print(f'###action_retified: [{original_action}] --> [{action}]')
+        print(f'\n###action_retified: [{original_action}] --> [{action}]\n')
     return action, total_action_retified, action_retified_by_model    
 ########################  Function END ########################
 
@@ -302,7 +305,7 @@ success_flag = False
 success_rate = 0.0
 # TOTAL_TASK=140 #seen
 TOTAL_TASK=134 #unseen
-action_retified_flag = False
+action_retified_flag = True
 step = 0
 start_time = time.time()
 task_scene = ""
@@ -350,10 +353,11 @@ while True:
     # print(feedback_data.history)
 
     action = model_generate(feedback_data.history)
-    # if action_retified_flag:
-    #     # action = action_retified(list(feedback_data.information['admissible_commands']), action)
-    #     action, total_action_retified, action_retified_by_model = action_retified_v2(list(feedback_data.information['admissible_commands']), action, feedback_data.history, long_horizon_action, total_action_retified, action_retified_by_model)
-    # print(action)
+    if action_retified_flag:
+        # action = action_retified(list(feedback_data.information['admissible_commands']), action)
+        action, total_action_retified, action_retified_by_model = action_retified_v2(list(feedback_data.information['admissible_commands']), action, feedback_data.history, long_horizon_action, total_action_retified, action_retified_by_model)
+    
+    print(f"Task: [{Task_Index}], Iter: [{step}], Obs: {feedback_data.observation}, Action: {action}")
     logger.info(f"Task: [{Task_Index}], Iter: [{step}], Obs: {feedback_data.observation}, Action: {action}")
     step += 1
     long_horizon_action.append(action)
